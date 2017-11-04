@@ -1,0 +1,13 @@
+{
+  "cc.components.Header.home": "Home",
+  "cc.components.Header.about": "About us",
+  "cc.components.Header.services": "Services",
+  "cc.components.Header.travel": "Travel",
+  "cc.components.Header.contact": "Contact",
+
+  "cc.containers.HomePage.home.header": "Home",
+  "cc.containers.HomePage.about.header": "About us",
+  "cc.containers.HomePage.services.header": "Services",
+  "cc.containers.HomePage.travel.header": "Travel",
+  "cc.containers.HomePage.contact.header": "Contact"
+}

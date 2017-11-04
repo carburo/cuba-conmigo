@@ -1,0 +1,12 @@
+{
+  "cc.components.Header.home": "Inicio",
+  "cc.components.Header.about": "Quiénes somos",
+  "cc.components.Header.services": "Servicios",
+  "cc.components.Header.travel": "Viajes",
+  "cc.components.Header.contact": "Contacto",
+  "cc.containers.HomePage.home.header": "Inicio",
+  "cc.containers.HomePage.about.header": "Quiénes somos",
+  "cc.containers.HomePage.services.header": "Servicios",
+  "cc.containers.HomePage.travel.header": "Viajes",
+  "cc.containers.HomePage.contact.header": "Contacto"
+}
