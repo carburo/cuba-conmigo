@@ -1,12 +1,13 @@
 import React from "react";
-import {Card, Container} from "reactstrap"
+import {Card, CardBody, CardHeader, Container} from "reactstrap"
 import {FormattedMessage} from "react-intl"
 import messages from './messages';
+import Fade from "../../components/Transitions/Fade";
 
 export default class Translations extends React.Component {
     render() {
         return (
-            <div>
+            <Fade in={true} timeout={0}>
                 <Container>
                     <h1><FormattedMessage {...messages.translationsHeader} /></h1>
 
@@ -17,21 +18,21 @@ export default class Translations extends React.Component {
                     </p>
 
                     <Card>
-                        <div className="card-body">
+                        <CardBody>
                             Presso gli uffici di Cuba Conmigo, è presente un traduttore giurato il quale, oltre che
                             prestare in forma del tutto gratuita consulenza sull’iter operativo da adottare per
                             l’espletamento delle pratiche, provvederà a tradurre e legalizzare tutti i documenti che di
                             volta in volta si rendessero necessari. Di questa opportunità possono avvalersi anche
                             società che abbiano bisogno di tradurre o legalizzare documenti societari come atti
                             costitutivi, certificati camerali, bilanci, lettere di referenze e quant’altro.
-                        </div>
+                        </CardBody>
                     </Card>
 
                     <Card>
-                        <div className="card-header">
+                        <CardHeader>
                             <h4>Traduzione Asseverata</h4>
-                        </div>
-                        <div className="card-body">
+                        </CardHeader>
+                        <CardBody>
                             Quando un documento legale deve essere tradotto per essere presentato presso un ente o
                             un’istituzione deve mantenere il proprio valore legale: in questo caso è necessaria la
                             traduzione asseverata (o traduzione giurata) in tribunale.
@@ -53,10 +54,10 @@ export default class Translations extends React.Component {
 
                             Il servizio di asseverazione di traduzioni della nostra agenzia è garantita da un traduttore
                             giurato con più di 25 anni di esperienza.
-                        </div>
+                        </CardBody>
                     </Card>
                 </Container>
-            </div>
+            </Fade>
         );
     }
 }

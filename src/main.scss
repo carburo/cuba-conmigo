@@ -12,6 +12,16 @@ $navbar-light-active-color: theme-color("primary");
   text-align: center;
 }
 
+.example-enter {
+  opacity: 0;
+  z-index: 1;
+}
+
+.example-enter.example-enter-active {
+  opacity: 1;
+  transition: opacity 250ms ease-in;
+}
+
 @import "../node_modules/bootstrap/scss/print";
 @import "../node_modules/bootstrap/scss/reboot";
 @import "../node_modules/bootstrap/scss/type";

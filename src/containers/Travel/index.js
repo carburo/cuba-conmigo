@@ -1,16 +1,17 @@
 import React from "react";
 import {Container} from "reactstrap"
-import { FormattedMessage } from "react-intl"
+import {FormattedMessage} from "react-intl"
 import messages from './messages';
+import Fade from "../../components/Transitions/Fade";
 
-export default class Home extends React.Component {
+export default class Travel extends React.Component {
     render() {
-      return (
-        <div>
-          <Container>
-            <h1><FormattedMessage {...messages.travelHeader} /></h1>
-          </Container>
-        </div>
-      );
+        return (
+            <Fade in={true} timeout={0}>
+                <Container>
+                    <h1><FormattedMessage {...messages.travelHeader} /></h1>
+                </Container>
+            </Fade>
+        );
     }
 }
