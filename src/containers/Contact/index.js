@@ -20,20 +20,14 @@ export default class Contact extends React.Component {
                 <Container>
                     <Row>
                         <div className="col-md-4">
-                            <InfoCard>
-                                <h2>
-                                    <i className="icon-direction"/>
-                                    <FormattedMessage {...messages.addressTitle}/>
-                                </h2>
+                            <InfoCard icon={<i className="icon-direction"/>}
+                                      title={<FormattedMessage {...messages.addressTitle}/>}>
                                 <p><FormattedMessage {...messages.addressText} /></p>
                             </InfoCard>
                         </div>
                         <div className="col-md-4">
-                            <InfoCard>
-                                <h2>
-                                    <i className="icon-envelope"/>
-                                    <FormattedMessage {...messages.emailTitle}/>
-                                </h2>
+                            <InfoCard icon={<i className="icon-envelope"/>}
+                                      title={<FormattedMessage {...messages.emailTitle}/>}>
                                 <ul>
                                     <li><Email to="info@cubaconmigo.com"/></li>
                                     <li><Email to="viaggi@cubaconmigo.com"/></li>
@@ -41,11 +35,8 @@ export default class Contact extends React.Component {
                             </InfoCard>
                         </div>
                         <div className="col-md-4">
-                            <InfoCard>
-                                <h2>
-                                    <i className="icon-phone"/>
-                                    <FormattedMessage {...messages.phoneTitle}/>
-                                </h2>
+                            <InfoCard icon={<i className="icon-phone"/>}
+                                      title={<FormattedMessage {...messages.phoneTitle}/>}>
                                 <ul>
                                     <li><FormattedMessage {...messages.officePhoneTitle}/>: 06 64469629</li>
                                     <li><FormattedMessage {...messages.documentsPhoneTitle}/>: 346 2303221</li>
@@ -61,6 +52,9 @@ export default class Contact extends React.Component {
 
                 <Container>
                     <h2><FormattedMessage {...messages.openingTimeTitle}/></h2>
+                    <h2>
+                        <i className="rounded-circle icon-social-facebook"/>
+                    </h2>
                     <p>
                         Lun - Ven: 10:00 - 13:00, 14:00 - 19:00
                     </p>

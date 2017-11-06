@@ -1,18 +1,24 @@
 import React from "react";
 import {FormattedMessage} from "react-intl"
-import messages from './messages';
+import {Container} from "reactstrap"
+import messages from './messages'
+import {SocialIcons} from "../../containers/Icons/index";
 
-export default function Footer(props) {
-    return (
-        <footer>
-            <div className="footer">
-                <div className="container">
-                    <FormattedMessage {...messages.copyrightNotice}/>
-                    <a href="http://polymitasoft.com">
-                        <FormattedMessage {...messages.designerLink}/>
-                    </a>
+export default class Footer extends React.Component {
+
+    render() {
+        return (
+            <footer>
+                <Container>
+                    <SocialIcons/>
+                </Container>
+                <div className="footer">
+                    <Container>
+                        <FormattedMessage {...messages.copyrightNotice}/>
+                        <FormattedMessage {...messages.designerLink} />
+                    </Container>
                 </div>
-            </div>
-        </footer>
-    );
+            </footer>
+        );
+    }
 }

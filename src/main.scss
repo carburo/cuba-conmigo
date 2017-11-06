@@ -10,16 +10,14 @@ $navbar-light-active-color: theme-color("primary");
 
 .info-card {
   text-align: center;
-}
 
-.example-enter {
-  opacity: 0;
-  z-index: 1;
-}
-
-.example-enter.example-enter-active {
-  opacity: 1;
-  transition: opacity 250ms ease-in;
+  &:hover .icon-pulse {
+    animation-name: pulse-shrink;
+    animation-duration: 0.3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+  }
 }
 
 @import "../node_modules/bootstrap/scss/print";
