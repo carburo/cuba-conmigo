@@ -1,15 +1,27 @@
 import React from "react";
+import {TimelineLite} from "gsap";
 
-export default function InfoCard(props) {
-    return (
-        <div className="info-card">
-            <div style={iconStyle} className="text-primary mb-2 icon-wrapper">
-                {props.icon}
+export default class InfoCard extends React.Component {
+
+    animate = () => {
+        var animation = new TimelineLite()
+        animation
+          .to(this.box, 0.4, { y: 10 })
+          .to(this.box, 0.4, { y: 0 })
+    }
+
+    render() {
+        return (
+            <div className="info-card">
+                <div style={iconStyle} className="text-primary mb-2 icon-wrapper"
+                    ref={box => this.box = box} onMouseEnter={this.animate}>
+                    {this.props.icon}
+                </div>
+                <h2>{this.props.title}</h2>
+                {this.props.children}
             </div>
-            <h2>{props.title}</h2>
-            {props.children}
-        </div>
-    );
+        );
+    }
 }
 
 const iconStyle = {

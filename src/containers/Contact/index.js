@@ -19,7 +19,7 @@ export default class Contact extends React.Component {
 
                 <Container>
                     <Row>
-                        <div className="col-md-4">
+                        <div>
                             <InfoCard icon={<i className="icon-direction"/>}
                                       title={<FormattedMessage {...messages.addressTitle}/>}>
                                 <p><FormattedMessage {...messages.addressText} /></p>
@@ -52,9 +52,6 @@ export default class Contact extends React.Component {
 
                 <Container>
                     <h2><FormattedMessage {...messages.openingTimeTitle}/></h2>
-                    <h2>
-                        <i className="rounded-circle icon-social-facebook"/>
-                    </h2>
                     <p>
                         Lun - Ven: 10:00 - 13:00, 14:00 - 19:00
                     </p>
