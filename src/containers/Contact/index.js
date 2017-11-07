@@ -1,5 +1,5 @@
 import React from "react";
-import {Container, Row} from "reactstrap"
+import {Container, Row, Col} from "reactstrap"
 import {FormattedMessage} from "react-intl"
 import messages from './messages';
 import Email from "../../components/Email";
@@ -19,13 +19,13 @@ export default class Contact extends React.Component {
 
                 <Container>
                     <Row>
-                        <div>
+                        <Col md={4}>
                             <InfoCard icon={<i className="icon-direction"/>}
                                       title={<FormattedMessage {...messages.addressTitle}/>}>
                                 <p><FormattedMessage {...messages.addressText} /></p>
                             </InfoCard>
-                        </div>
-                        <div className="col-md-4">
+                        </Col>
+                        <Col md={4}>
                             <InfoCard icon={<i className="icon-envelope"/>}
                                       title={<FormattedMessage {...messages.emailTitle}/>}>
                                 <ul>
@@ -33,8 +33,8 @@ export default class Contact extends React.Component {
                                     <li><Email to="viaggi@cubaconmigo.com"/></li>
                                 </ul>
                             </InfoCard>
-                        </div>
-                        <div className="col-md-4">
+                        </Col>
+                        <Col md={4}>
                             <InfoCard icon={<i className="icon-phone"/>}
                                       title={<FormattedMessage {...messages.phoneTitle}/>}>
                                 <ul>
@@ -46,7 +46,7 @@ export default class Contact extends React.Component {
                                     <li><FormattedMessage {...messages.translationsPhoneTitle}/>: 328 6248883</li>
                                 </ul>
                             </InfoCard>
-                        </div>
+                        </Col>
                     </Row>
                 </Container>
 
