@@ -3,7 +3,7 @@ import {Navbar, NavbarToggler, Container, NavItem, Collapse, Nav} from "reactstr
 import {NavLink, Link} from "react-router-dom"
 import {FormattedMessage} from "react-intl"
 import messages from './messages';
-import logo from '../../img/logo.png';
+import logo from 'img/logo.png';
 
 export default class Header extends React.Component {
     constructor(props) {
