@@ -1,14 +1,14 @@
 import React from "react";
 import {Redirect, Route, Switch} from "react-router-dom"
-import Home from "../Home/index"
-import About from "../About/index"
-import Services from "../Services/index"
-import Travel from "../Travel/index"
-import Contact from "../Contact/index"
-import Consulate from "../Consulate/index"
-import Header from "../../components/Header/index"
-import Footer from "../../components/Footer/index"
-import Translations from "../Translations/index"
+import Home from "../Home"
+import About from "../About"
+import Services from "../Services"
+import Travel from "../Travel"
+import Contact from "../Contact"
+import Consulate from "../Consulate"
+import Header from "../Header"
+import Footer from "../Footer"
+import Translations from "../Translations"
 import {Container} from "reactstrap"
 
 export default class App extends React.Component {

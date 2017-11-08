@@ -2,9 +2,9 @@ import React from "react";
 import {Container, Row, Col} from "reactstrap"
 import {FormattedMessage} from "react-intl"
 import messages from './messages';
-import Email from "components/Email";
-import InfoCard from "components/InfoCard";
-import Fade from "components/Transitions/Fade";
+import Email from "../Email";
+import InfoCard from "../InfoCard";
+import Fade from "../Transitions/Fade";
 
 export default class Contact extends React.Component {
     render() {

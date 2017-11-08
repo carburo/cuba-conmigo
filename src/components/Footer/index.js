@@ -2,7 +2,7 @@ import React from "react";
 import {FormattedMessage} from "react-intl"
 import {Container} from "reactstrap"
 import messages from './messages'
-import {SocialIcons} from "../Icons/index";
+import {SocialIcons} from "../Icons";
 
 export default class Footer extends React.Component {
 

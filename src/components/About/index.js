@@ -2,7 +2,7 @@ import React from "react";
 import {Container} from "reactstrap"
 import {FormattedMessage} from "react-intl"
 import messages, {services} from './messages';
-import Fade from "../../components/Transitions/Fade";
+import Fade from "../Transitions/Fade";
 
 export default class Home extends React.Component {
     render() {

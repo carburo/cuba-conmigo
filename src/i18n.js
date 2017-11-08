@@ -9,7 +9,7 @@ import enLocaleData from 'react-intl/locale-data/en';
 import itLocaleData from 'react-intl/locale-data/it';
 import esLocaleData from 'react-intl/locale-data/es';
 
-import { DEFAULT_LOCALE } from './containers/App/constants';
+import { DEFAULT_LOCALE } from './components/App/constants';
 
 import enTranslationMessages from './translations/en.json';
 import itTranslationMessages from './translations/it.json';

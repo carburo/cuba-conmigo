@@ -1,5 +1,5 @@
 import * as React from "react";
-import icons from "../../img/icons.svg";
+import icons from "img/icons.svg";
 
 export default function SocialIcon(props) {
     return (

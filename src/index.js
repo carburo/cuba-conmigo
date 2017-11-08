@@ -1,9 +1,9 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import "popper.js"
-import App from "./containers/App/index";
+import App from "./components/App";
 import { BrowserRouter } from "react-router-dom"
-import LanguageProvider from "./containers/LanguageProvider/index"
+import LanguageProvider from "./components/LanguageProvider"
 import { translationMessages } from "./i18n"
 import registerServiceWorker from './registerServiceWorker';
 import "simple-line-icons/css/simple-line-icons.css"

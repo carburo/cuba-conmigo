@@ -2,7 +2,7 @@ import React from "react";
 import {Container} from "reactstrap"
 import {FormattedMessage} from "react-intl"
 import messages from './messages';
-import Fade from "../../components/Transitions/Fade";
+import Fade from "../Transitions/Fade";
 
 export default class Travel extends React.Component {
     render() {
