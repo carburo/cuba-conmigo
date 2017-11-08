@@ -4,9 +4,33 @@
   "cc.components.Header.services": "Servicios",
   "cc.components.Header.travel": "Viajes",
   "cc.components.Header.contact": "Contacto",
+  
   "cc.containers.HomePage.home.header": "Inicio",
   "cc.containers.HomePage.about.header": "Quiénes somos",
   "cc.containers.HomePage.services.header": "Servicios",
   "cc.containers.HomePage.travel.header": "Viajes",
-  "cc.containers.HomePage.contact.header": "Contacto"
+  "cc.containers.HomePage.contact.header": "Contacto",
+
+  "cc.components.Footer.copyright": "© 2017 Cuba Conmigo. Todos los derechos reservados. ",
+  "cc.components.Footer.designer": "Diseñado con {love} por {link}.",
+
+  "cc.containers.About.header": "¡Nosotros nos encargamos!",
+  "cc.containers.About.intro": "L’ Associazione per soddisfare le richieste degli associati, fornisce loro le seguente attività:",
+
+  "cc.containers.Translations.header": "Traducciones",
+
+  "cc.containers.Contact.header": "Información de contacto",
+  "cc.containers.Contact.header.message": "Si prega di chiamare il nostro ufficio per fissare un appuntamento, oppure compilare il modulo sottostante e vi contatteremo in 24 ore.",
+  "cc.containers.Contact.address.title": "Dirección",
+  "cc.containers.Contact.address.text": "Piazza Sante Bargellini, 3. 00157 Roma",
+  "cc.containers.Contact.email.title": "Email",
+  "cc.containers.Contact.phone.title": "Teléfono",
+  "cc.containers.Contact.phone.office.title": "Oficina",
+  "cc.containers.Contact.phone.documents.title": "Documentos",
+  "cc.containers.Contact.phone.travel.title": "Viajes",
+  "cc.containers.Contact.phone.packages.title": "Paquetes",
+  "cc.containers.Contact.phone.containers.title": "Contenedores",
+  "cc.containers.Contact.phone.translations.title": "Traducciones",
+  "cc.containers.Contact.openingTime.title": "Horario de apertura",
+  "cc.dummy.end": ""
 }
