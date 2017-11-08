@@ -1,8 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
-// import "jquery";
 import "popper.js"
-// import "bootstrap"
 import App from "./containers/App/index";
 import { BrowserRouter } from "react-router-dom"
 import LanguageProvider from "./containers/LanguageProvider/index"
