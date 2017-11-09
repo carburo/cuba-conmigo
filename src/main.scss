@@ -20,6 +20,16 @@ $navbar-light-active-color: theme-color("primary");
   }
 }
 
+// Footer
+footer { 
+  background: $gray-800;
+  color: $gray-500;
+
+  & #copyright {
+    background: $gray-900;
+  }
+}
+
 @import "../node_modules/bootstrap/scss/print";
 @import "../node_modules/bootstrap/scss/reboot";
 @import "../node_modules/bootstrap/scss/type";

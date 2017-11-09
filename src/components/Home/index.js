@@ -49,9 +49,9 @@ export default class Home extends React.Component {
                     <Container>
                         <h2 style={{textAlign: "center"}}>This is a call to action</h2>
                         <p style={{textAlign: "center"}}>
-                            <Button color="primary">Hell yeah!</Button>
-                            <Button color="danger" style={{marginLeft: "1rem"}}>I'll pass</Button>
-                        </p>    
+                            <Button color="primary" outline className="mr-3">Hell yeah!</Button>
+                            <Button color="primary">I'll pass</Button>
+                        </p>
                     </Container>    
                 </Jumbotron>    
             </Fade>
