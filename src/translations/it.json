@@ -2,6 +2,9 @@
   "cc.components.Header.home": "Inizio",
   "cc.components.Header.about": "Su di noi",
   "cc.components.Header.services": "Servizi",
+  "cc.components.Header.packages": "Pacchi e containers",
+  "cc.components.Header.translations": "Traduzioni",
+  "cc.components.Header.consulate": "Consolato",
   "cc.components.Header.travel": "Viaggi",
   "cc.components.Header.contact": "Contatti",
 
@@ -11,7 +14,9 @@
   "cc.containers.HomePage.home.header": "Inizio",
   "cc.containers.HomePage.about.header": "Su di noi",
   "cc.containers.HomePage.services.header": "Servizi",
-  "cc.containers.HomePage.travel.header": "Viaggi",
+  "cc.containers.HomePage.travel.header": "Pacchetti turistici",
+  "cc.containers.HomePage.packages.header": "Pacchi e Containers",
+  "cc.containers.HomePage.legal.header": "Pratiche legali",
   "cc.containers.HomePage.contact.header": "Contatti",
   "cc.containers.HomePage.contact.message": "Il difficile diventa facile quando pensiamo che facile sia!",
 
