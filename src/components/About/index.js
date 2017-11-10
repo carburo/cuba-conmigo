@@ -4,7 +4,7 @@ import {FormattedMessage} from "react-intl"
 import messages, {services} from './messages';
 import Fade from "../Transitions/Fade";
 
-export default class Home extends React.Component {
+export default class About extends React.Component {
     render() {
         return (
             <Fade in={true} timeout={0}>

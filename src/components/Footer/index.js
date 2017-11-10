@@ -4,14 +4,22 @@ import {Container, Row, Col, Form, FormGroup, Input, Button} from "reactstrap"
 import messages from './messages'
 import {SocialIcons} from "../Icons";
 
+function FooterColumn(props) {
+    return (
+      <Col md={4} xs={12}>
+          {props.children}
+      </Col>
+    );
+}
+
 export default class Footer extends React.Component {
 
     render() {
         return (
             <footer style={footerStyle}>
-                <Container>
+                <Container className="pt-4 pb-4">
                     <Row>
-                        <Col md={4} xs={12}>
+                        <FooterColumn>
                             <h3>About us</h3>
                             <p>
                             Perché non solo è importante fare quello che si ama, ma è pure importante amare quello che si fà!
@@ -19,16 +27,16 @@ export default class Footer extends React.Component {
                             Cuba Conmigo offre consulenze sempre in forma gratuita anche su situazioni di particolare complessità, suggerendo sempre soluzioni ottimali alle esigenze della propria clientela.
                             </p>
                             <SocialIcons/>
-                        </Col>
-                        <Col md={4} xs={12}>
+                        </FooterColumn>
+                        <FooterColumn>
                             <h3>Orari di apertura</h3>
                             <p>
                                 Lun - Ven: <br />
                                 10:00 - 13:00 <br />
                                 14:00 - 19:00
                             </p>
-                        </Col>
-                        <Col md={4} xs={12}>
+                        </FooterColumn>
+                        <FooterColumn>
                             <h3>Contattaci</h3>
                             <Form>
                                 <FormGroup>
@@ -42,7 +50,7 @@ export default class Footer extends React.Component {
                                 </FormGroup>
                                 <Button>Submit</Button>
                             </Form>    
-                        </Col>
+                        </FooterColumn>
                     </Row>
                 </Container>
                 <div id="copyright" style={copyrightStyle}>
@@ -58,9 +66,9 @@ export default class Footer extends React.Component {
 
 const footerStyle = {
     
-}
+};
 
 const copyrightStyle = {
     paddingTop: "1.5rem",
     paddingBottom: "2rem",
-}
+};
