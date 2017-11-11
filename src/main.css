@@ -1,18 +1,3 @@
-.info-card {
-  text-align: center; }
-  .info-card:hover .icon-pulse {
-    animation-name: pulse-shrink;
-    animation-duration: 0.3s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
-    animation-direction: alternate; }
-
-footer {
-  background: #343a40;
-  color: #adb5bd; }
-  footer #copyright {
-    background: #212529; }
-
 @media print {
   *,
   *::before,

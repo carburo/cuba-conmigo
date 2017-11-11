@@ -12,7 +12,7 @@ export default class InfoCard extends React.Component {
 
     render() {
         return (
-            <div className="info-card">
+            <div style={style}>
                 <div style={iconStyle} className="text-primary mb-2 icon-wrapper"
                      ref={box => this.box = box} onMouseEnter={this.animate}>
                     {this.props.icon}
@@ -23,6 +23,10 @@ export default class InfoCard extends React.Component {
         );
     }
 }
+
+const style = {
+    textAlign: "center",
+};
 
 const iconStyle = {
     fontSize: "2.5rem",

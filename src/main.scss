@@ -8,28 +8,6 @@ $primary: #007bff;
 // Navbar
 $navbar-light-active-color: theme-color("primary");
 
-.info-card {
-  text-align: center;
-
-  &:hover .icon-pulse {
-    animation-name: pulse-shrink;
-    animation-duration: 0.3s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-  }
-}
-
-// Footer
-footer { 
-  background: $gray-800;
-  color: $gray-500;
-
-  & #copyright {
-    background: $gray-900;
-  }
-}
-
 @import "../node_modules/bootstrap/scss/print";
 @import "../node_modules/bootstrap/scss/reboot";
 @import "../node_modules/bootstrap/scss/type";

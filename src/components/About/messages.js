@@ -7,10 +7,10 @@ import {defineMessages} from 'react-intl';
 
 export default defineMessages({
     aboutHeader: {
-        id: 'cc.containers.About.header',
+        id: 'cc.components.About.header',
     },
     introMessage: {
-        id: 'cc.containers.About.intro',
+        id: 'cc.components.About.intro',
     }
 });
 

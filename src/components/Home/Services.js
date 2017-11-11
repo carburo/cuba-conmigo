@@ -15,11 +15,11 @@ export default function Services(props) {
                 {services.map(service => {
                     const title = <FormattedMessage {...service.title} />;
                     return(
-                        <Col md={4} xs={12}>
+                        <Col key={service.key} md={4} sm={12}>
                             <Description
                                 title={title}
-                                footer={<p>{service.text}</p>}>
-                                <img alt={title} src={service.image}/>
+                                footer={<p><FormattedMessage {...service.text} /></p>}>
+                                <img width="90%" alt={title} src={service.image}/>
                             </Description>
                         </Col>
                     );
@@ -31,18 +31,21 @@ export default function Services(props) {
 
 const services = [
     {
+        key: "legal",
         title: messages.legalTitle,
         image: legalImage,
-        text: "",
+        text: messages.legalDescription,
     },
     {
+        key: "travel",
         title: messages.travelTitle,
         image: travelImage,
-        text: "La nostra esperienza nel settore come agenzia turistica, ci permette di suggerire le migliore soluzioni alle richieste della nostra clientela, organizzando viaggi personalizzati a Cuba.",
+        text: messages.travelDescription,
     },
     {
+        key: "packages",
         title: messages.packagesTitle,
         image: packagesImage,
-        text: "Cuba Conmigo offre ai propri clienti le migliori tariffe per gli invii a Cuba. Grazie a tutti i servizi offerti da Cuba Conmigo si possono effettuare le spedizioni con facilità e sicurezza.",
+        text: messages.packagesDescription,
     },
 ];

@@ -3,6 +3,7 @@ import {FormattedMessage} from "react-intl"
 import {Container, Row, Col, Form, FormGroup, Input, Button} from "reactstrap"
 import messages from './messages'
 import {SocialIcons} from "../Icons";
+import {gray500, gray800, gray900} from "../../colors";
 
 function FooterColumn(props) {
     return (
@@ -53,7 +54,7 @@ export default class Footer extends React.Component {
                         </FooterColumn>
                     </Row>
                 </Container>
-                <div id="copyright" style={copyrightStyle}>
+                <div style={copyrightStyle}>
                     <Container>
                         <FormattedMessage {...messages.copyrightNotice}/>
                         <FormattedMessage {...messages.designerLink} />
@@ -65,10 +66,12 @@ export default class Footer extends React.Component {
 }
 
 const footerStyle = {
-    
+    background: gray800,
+    color: gray500,
 };
 
 const copyrightStyle = {
     paddingTop: "1.5rem",
     paddingBottom: "2rem",
+    background: gray900,
 };

@@ -7,6 +7,6 @@ import { defineMessages } from 'react-intl';
 
 export default defineMessages({
   travelHeader: {
-    id: 'cc.containers.HomePage.travel.header',
+    id: 'cc.components.Travel.header',
   },
 });

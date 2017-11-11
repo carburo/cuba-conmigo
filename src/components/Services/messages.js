@@ -1,12 +1,7 @@
-/*
- * HomePage Messages
- *
- * This contains all the text for the HomePage component.
- */
 import { defineMessages } from 'react-intl';
 
 export default defineMessages({
   servicesHeader: {
-    id: 'cc.containers.HomePage.services.header',
+    id: 'cc.components.Services.header',
   },
 });

@@ -2,18 +2,27 @@ import {defineMessages} from 'react-intl';
 
 export default defineMessages({
     contactMessage: {
-        id: 'cc.containers.HomePage.contact.message',
+        id: 'cc.components.HomePage.contact.message',
     },
     servicesTitle: {
-        id: 'cc.containers.HomePage.services.header',
+        id: 'cc.components.HomePage.services.header',
     },
     legalTitle: {
-        id: 'cc.containers.HomePage.legal.header',
+        id: 'cc.components.HomePage.legal.header',
     },
     travelTitle: {
-        id: 'cc.containers.HomePage.travel.header',
+        id: 'cc.components.HomePage.travel.header',
     },
     packagesTitle: {
-        id: 'cc.containers.HomePage.packages.header',
+        id: 'cc.components.HomePage.packages.header',
+    },
+    legalDescription: {
+        id: 'cc.components.HomePage.legal.description',
+    },
+    travelDescription: {
+        id: 'cc.components.HomePage.travel.description',
+    },
+    packagesDescription: {
+        id: 'cc.components.HomePage.packages.description',
     },
 });
