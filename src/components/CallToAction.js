@@ -1,5 +1,6 @@
 import Section from "./Section";
-import {Button, Row, Col} from "reactstrap";
+import {Col, Row} from "reactstrap";
+import {Link} from "react-router-dom";
 import * as React from "react";
 
 export default function CallToAction(props) {
@@ -7,10 +8,10 @@ export default function CallToAction(props) {
         <Section dark={props.dark} title={props.title} subtitle={props.subtitle}>
             <Row style={buttonGroupStyle}>
                 <Col md={6} sm={12} xs={12} className={"mb-2 text-xs-center text-sm-center text-md-right"}>
-                    <ActionButton left outline text={props.option1}/>
+                    <ActionButton left outline text={props.option1} to={props.link1}/>
                 </Col>
                 <Col md={6} sm={12} xs={12} className={"mb-2 text-xs-center text-sm-center text-md-left"}>
-                    <ActionButton text={props.option2}/>
+                    <ActionButton text={props.option2} to={props.link2}/>
                 </Col>
             </Row>
         </Section>
@@ -19,11 +20,11 @@ export default function CallToAction(props) {
 
 function ActionButton(props) {
     const margin = (props.left) ? "mr-md-5 mr-sm-0" : "ml-md-5 ml-sm-0";
-
+    const btn = 'btn' + (props.outline ? '-outline' : '');
     return (
-        <Button className={margin} style={buttonStyle} outline={props.outline} color="primary">
+        <Link to={props.to} className={`btn ${btn}-primary ${margin}`} style={buttonStyle}>
             {props.text}
-        </Button>
+        </Link>
     );
 }
 

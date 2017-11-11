@@ -23,8 +23,10 @@ export default class Home extends React.Component {
                 <CallToAction dark
                               title="Make the Move"
                               subtitle="Considering migrating from Maven? We've got resources to help."
-                              option1="Oh Hell yeah!"
-                              option2="I'll think about it"
+                              option1="Learn more"
+                              link1="/about"
+                              option2="Contattaci"
+                              link2="/contact"
                 />
             </Fade>
         );

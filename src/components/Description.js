@@ -31,8 +31,3 @@ const bodyStyle = {
     marginTop: "2rem",
     marginBottom: "2rem",
 };
-
-const footerStyle = {
-    marginBottom: "1rem",
-    fontSize: "1.25rem"
-};
