@@ -2,18 +2,19 @@ import Section from "./Section";
 import {Col, Row} from "reactstrap";
 import {Link} from "react-router-dom";
 import * as React from "react";
+import styled from "styled-components";
 
 export default function CallToAction(props) {
     return (
         <Section dark={props.dark} title={props.title} subtitle={props.subtitle}>
-            <Row style={buttonGroupStyle}>
+            <ButtonGroup>
                 <Col md={6} sm={12} xs={12} className={"mb-2 text-xs-center text-sm-center text-md-right"}>
                     <ActionButton left outline text={props.option1} to={props.link1}/>
                 </Col>
                 <Col md={6} sm={12} xs={12} className={"mb-2 text-xs-center text-sm-center text-md-left"}>
                     <ActionButton text={props.option2} to={props.link2}/>
                 </Col>
-            </Row>
+            </ButtonGroup>
         </Section>
     );
 }
@@ -28,9 +29,9 @@ function ActionButton(props) {
     );
 }
 
-const buttonGroupStyle = {
-    paddingTop: "1rem",
-};
+const ButtonGroup = styled(Row)`
+    padding-top: 1rem;
+`
 
 const buttonStyle = {
     minWidth: "10rem",

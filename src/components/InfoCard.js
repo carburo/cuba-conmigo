@@ -1,5 +1,6 @@
 import React from "react";
 import {TimelineLite} from "gsap";
+import styled from "styled-components";
 
 export default class InfoCard extends React.Component {
 
@@ -12,21 +13,21 @@ export default class InfoCard extends React.Component {
 
     render() {
         return (
-            <div style={style}>
+            <Card>
                 <div style={iconStyle} className="text-primary mb-2 icon-wrapper"
                      ref={box => this.box = box} onMouseEnter={this.animate}>
                     {this.props.icon}
                 </div>
                 <h2>{this.props.title}</h2>
                 {this.props.children}
-            </div>
+            </Card>
         );
     }
 }
 
-const style = {
-    textAlign: "center",
-};
+const Card = styled.div`
+    text-align: center;
+`
 
 const iconStyle = {
     fontSize: "2.5rem",

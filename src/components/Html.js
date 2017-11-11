@@ -1,9 +1,5 @@
-import * as React from "react";
+import styled from 'styled-components'
 
-const h1Props = {
-  marginBottom: "2rem",
-};
-
-export function H1(props) {
-    return <h1 style={h1Props}>{props.children}</h1>
-}
+export const H1 = styled.h1`
+  margin-bottom: 2rem;
+`

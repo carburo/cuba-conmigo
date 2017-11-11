@@ -1,5 +1,6 @@
 import * as React from "react";
 import {Col, Row} from "reactstrap";
+import styled from "styled-components";
 
 export default class Featurette extends React.Component {
     render() {
@@ -22,12 +23,12 @@ export default class Featurette extends React.Component {
     }
 }
 
-function Heading(props) {
-    return (
-        <h2 style={{fontWeight: "300", lineHeight: "1", letterSpacing: "-.05rem"}}>{props.children}</h2>
-    );
-}
+const Heading = styled.h2`
+    font-weigth: 300;
+    line-height: 1;
+    letter-spacing: -.05rem;
+`
 
-export function FeaturetteDivider() {
-    return <hr style={{margin: "5rem 0"}}/>;
-}
+export const FeaturetteDivider = styled.hr`
+    margin: 5rem 0;
+`
