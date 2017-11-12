@@ -1,6 +1,6 @@
 import * as React from "react";
 import icons from "img/icons.svg";
-import {colorPrimary} from "../../colors"
+import {colorPrimary, white} from "../../colors"
 
 export default function SocialIcon(props) {
     return (
@@ -38,7 +38,7 @@ const svgBackground = {
 };
 
 const svgForeground = {
-    fill: "#ffffff",
+    fill: white,
 };
 
 export const FacebookIcon = (props) => <SocialIcon icon="facebook-variant"
