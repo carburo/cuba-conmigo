@@ -1,7 +1,7 @@
 import Description from "../Description";
-import legalImage from "img/legal-small.jpg";
-import travelImage from "img/travel-small.jpg";
-import packagesImage from "img/packages-small.jpg";
+import legalImage from "img/mazo.svg";
+import travelImage from "img/avion.svg";
+import packagesImage from "img/globo.svg";
 import Section from "../Section";
 import messages from './messages';
 import {Col, Row} from "reactstrap";

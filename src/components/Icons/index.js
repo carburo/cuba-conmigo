@@ -1,5 +1,6 @@
 import * as React from "react";
 import icons from "img/icons.svg";
+import {colorPrimary} from "../../colors"
 
 export default function SocialIcon(props) {
     return (
@@ -33,7 +34,7 @@ const textStyle = {
 };
 
 const svgBackground = {
-    fill: "#007bff",
+    fill: colorPrimary,
 };
 
 const svgForeground = {
