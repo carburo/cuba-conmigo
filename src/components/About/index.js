@@ -4,6 +4,7 @@ import {FormattedMessage} from "react-intl"
 import messages, {services} from './messages';
 import Fade from "../Transitions/Fade";
 import {H1} from "../Html";
+import styled from "styled-components";
 
 export default class About extends React.Component {
     render() {
@@ -13,14 +14,18 @@ export default class About extends React.Component {
                     <H1>
                         <FormattedMessage {...messages.aboutHeader} />
                     </H1>
-                    <p style={{fontSize: "1.25rem"}}>
+                    <p className="lead">
                         <FormattedMessage {...messages.introMessage}/>
                     </p>
-                    <ul style={{fontSize: "1.25rem"}}>
-                        {services.map((service, i) => <li style={{paddingBottom: "0.5rem"}} key={i}>{service}</li>)}
+                    <ul className="lead">
+                        {services.map((service, i) => <Li key={i}>{service}</Li>)}
                     </ul>
                 </Container>
             </Fade>
         );
     }
 }
+
+const Li = styled.li`
+    padding-bottom: 0.5rem;
+`;

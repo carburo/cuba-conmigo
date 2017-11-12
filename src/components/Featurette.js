@@ -27,8 +27,8 @@ const Heading = styled.h2`
     font-weigth: 300;
     line-height: 1;
     letter-spacing: -.05rem;
-`
+`;
 
 export const FeaturetteDivider = styled.hr`
     margin: 5rem 0;
-`
+`;
