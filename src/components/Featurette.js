@@ -1,7 +1,7 @@
 import * as React from "react";
-import {Col, Row} from "reactstrap";
+import { Col, Row } from "reactstrap";
 import styled from "styled-components";
-import {gray600} from "color-variables";
+import { Text, TextMuted } from "./Html";
 
 export default class Featurette extends React.Component {
     render() {
@@ -13,9 +13,9 @@ export default class Featurette extends React.Component {
                         &nbsp;
                         <TextMuted>{this.props.subtitle}</TextMuted>
                     </Heading>
-                    <p className="lead">
+                    <Text>
                         {this.props.children}
-                    </p>
+                    </Text>
                 </Col>
                 <Col md={5} className={(this.props.reverse) ? "text-right" : "order-md-1"}>
                     {this.props.image}
@@ -34,7 +34,3 @@ const Heading = styled.h2`
 export const FeaturetteDivider = styled.hr`
     margin: 5rem 0;
 `;
-
-const TextMuted = styled.span`
-    color: ${gray600};
-`
