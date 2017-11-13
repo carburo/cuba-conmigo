@@ -11,5 +11,11 @@ export default defineMessages({
             love: <span className="text-danger">♥</span>,
             link: <a href="http://polymitasoft.com">Polymita</a>,
         },
+    },
+    aboutHeader: {
+        id: 'cc.Footer.about.header',
+    },
+    aboutBody: {
+        id: 'cc.Footer.about.body',
     }
 });
