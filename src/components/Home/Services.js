@@ -15,7 +15,7 @@ export default function Services(props) {
                 {services.map(service => {
                     const title = <FormattedMessage {...service.title} />;
                     return(
-                        <Col key={service.key} md={4} sm={12}>
+                        <Col key={service.key} xl={4} lg={4} md={4} sm={12} xs={12}>
                             <Description
                                 title={title}
                                 footer={<p><FormattedMessage {...service.text} /></p>}>

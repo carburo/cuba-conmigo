@@ -3,7 +3,7 @@ import {FormattedMessage} from "react-intl"
 import {Container, Row, Col, Form, FormGroup, Input, Button} from "reactstrap"
 import messages from './messages'
 import {SocialIcons} from "../Icons";
-import {gray500, gray800, gray900} from "../../colors";
+import {gray500, gray800, gray900} from "color-variables";
 
 function FooterColumn(props) {
     return (
