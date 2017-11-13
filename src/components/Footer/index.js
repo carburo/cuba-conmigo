@@ -20,7 +20,7 @@ export default class Footer extends React.Component {
     render() {
         return (
             <FooterDiv>
-                <Container className="pt-4 pb-4">
+                <FooterInfo>
                     <Row>
                         <FooterColumn>
                             <h3><FormattedMessage {...messages.aboutHeader} /></h3>
@@ -40,7 +40,7 @@ export default class Footer extends React.Component {
                             <ContactForm />
                         </FooterColumn>
                     </Row>
-                </Container>
+                </FooterInfo>
                 <CopyrightDiv>
                     <Container>
                         <FormattedMessage {...messages.copyrightNotice} />
@@ -61,4 +61,9 @@ const CopyrightDiv = styled.div`
     padding-top: 1.5rem;
     padding-bottom: 2rem;
     background: ${gray900};
+`;
+
+const FooterInfo = styled(Container)`
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
 `;
