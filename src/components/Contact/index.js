@@ -6,6 +6,7 @@ import Email from "../Email";
 import InfoCard from "../InfoCard";
 import Fade from "../Transitions/Fade";
 import { H1, Text } from "../Html";
+import Timetable from "../Timetable";
 
 export default class Contact extends React.Component {
     render() {
@@ -52,10 +53,8 @@ export default class Contact extends React.Component {
                 </Container>
 
                 <Container>
-                    <h2><FormattedMessage {...messages.openingTimeTitle} /></h2>
-                    <p>
-                        Lun - Ven: 10:00 - 13:00, 14:00 - 19:00
-                    </p>
+                    {/* <h2><FormattedMessage {...messages.openingTimeTitle} /></h2> */}
+                    <Timetable />
                 </Container>
             </Fade>
         );

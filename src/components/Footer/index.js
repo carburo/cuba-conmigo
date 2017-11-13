@@ -6,6 +6,7 @@ import { SocialIcons } from "../Icons";
 import ContactForm from "./ContactForm";
 import { gray500, gray800, gray900 } from "color-variables";
 import styled from "styled-components";
+import Timetable from "../Timetable";
 
 function FooterColumn(props) {
     return (
@@ -28,12 +29,7 @@ export default class Footer extends React.Component {
                             <SocialIcons />
                         </FooterColumn>
                         <FooterColumn>
-                            <h3>Orari di apertura</h3>
-                            <p>
-                                Lun - Ven: <br />
-                                10:00 - 13:00 <br />
-                                14:00 - 19:00
-                            </p>
+                            <Timetable />
                         </FooterColumn>
                         <FooterColumn>
                             <h3>Contattaci</h3>

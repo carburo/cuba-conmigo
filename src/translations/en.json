@@ -11,6 +11,10 @@
   "cc.Footer.copyright": "© 2017 Associazione Cuba Conmigo. ",
   "cc.Footer.designer": "Designed with {love} by {link}.",
 
+  "cc.Timetable.header": "Orari di apertura",
+  "cc.Timetable.openDays": "Monday - Friday",
+  "cc.Timetable.hourRange": "{start} - {end}",
+
   "cc.HomePage.home.header": "Home",
   "cc.HomePage.about.header": "About us",
   "cc.HomePage.services.header": "Services",
