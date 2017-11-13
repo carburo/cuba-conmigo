@@ -7,42 +7,42 @@ import {defineMessages} from 'react-intl';
 
 export default defineMessages({
     contactHeader: {
-        id: 'cc.components.Contact.header',
+        id: 'cc.Contact.header',
     },
     contactHeaderMessage: {
-        id: 'cc.components.Contact.header.message',
+        id: 'cc.Contact.header.message',
     },
     addressTitle: {
-        id: 'cc.components.Contact.address.title',
+        id: 'cc.Contact.address.title',
     },
     addressText: {
-        id: 'cc.components.Contact.address.text',
+        id: 'cc.Contact.address.text',
     },
     emailTitle: {
-        id: 'cc.components.Contact.email.title',
+        id: 'cc.Contact.email.title',
     },
     phoneTitle: {
-        id: 'cc.components.Contact.phone.title',
+        id: 'cc.Contact.phone.title',
     },
     officePhoneTitle: {
-        id: 'cc.components.Contact.phone.office.title',
+        id: 'cc.Contact.phone.office.title',
     },
     documentsPhoneTitle: {
-        id: 'cc.components.Contact.phone.documents.title',
+        id: 'cc.Contact.phone.documents.title',
     },
     travelPhoneTitle: {
-        id: 'cc.components.Contact.phone.travel.title',
+        id: 'cc.Contact.phone.travel.title',
     },
     packagesPhoneTitle: {
-        id: 'cc.components.Contact.phone.packages.title',
+        id: 'cc.Contact.phone.packages.title',
     },
     containersPhoneTitle: {
-        id: 'cc.components.Contact.phone.containers.title',
+        id: 'cc.Contact.phone.containers.title',
     },
     translationsPhoneTitle: {
-        id: 'cc.components.Contact.phone.translations.title',
+        id: 'cc.Contact.phone.translations.title',
     },
     openingTimeTitle: {
-        id: 'cc.components.Contact.openingTime.title',
+        id: 'cc.Contact.openingTime.title',
     },
 });

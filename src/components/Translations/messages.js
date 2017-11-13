@@ -7,6 +7,6 @@ import { defineMessages } from 'react-intl';
 
 export default defineMessages({
   translationsHeader: {
-    id: 'cc.containers.Translations.header',
+    id: 'cc.Translations.header',
   },
 });

@@ -7,12 +7,12 @@ import {defineMessages} from 'react-intl';
 
 export default defineMessages({
     travelHeader: {
-        id: 'cc.components.Travel.header',
+        id: 'cc.Travel.header',
     },
     cubaDestinationHeader: {
-        id: 'cc.components.Travel.cuba.header',
+        id: 'cc.Travel.cuba.header',
     },
     cubaDestinationText: {
-        id: 'cc.components.Travel.cuba.text',
+        id: 'cc.Travel.cuba.text',
     },
 });

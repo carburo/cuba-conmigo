@@ -4,6 +4,7 @@ import {Container, Row, Col, Form, FormGroup, Input, Button} from "reactstrap"
 import messages from './messages'
 import {SocialIcons} from "../Icons";
 import {gray500, gray800, gray900} from "color-variables";
+import styled from "styled-components";
 
 function FooterColumn(props) {
     return (
@@ -17,7 +18,7 @@ export default class Footer extends React.Component {
 
     render() {
         return (
-            <footer style={footerStyle}>
+            <FooterDiv>
                 <Container className="pt-4 pb-4">
                     <Row>
                         <FooterColumn>
@@ -54,24 +55,24 @@ export default class Footer extends React.Component {
                         </FooterColumn>
                     </Row>
                 </Container>
-                <div style={copyrightStyle}>
+                <CopyrightDiv>
                     <Container>
                         <FormattedMessage {...messages.copyrightNotice}/>
                         <FormattedMessage {...messages.designerLink} />
                     </Container>
-                </div>
-            </footer>
+                </CopyrightDiv>
+            </FooterDiv>
         );
     }
 }
 
-const footerStyle = {
-    background: gray800,
-    color: gray500,
-};
+const FooterDiv = styled.footer`
+    background: ${gray800};
+    color: ${gray500};
+`
 
-const copyrightStyle = {
-    paddingTop: "1.5rem",
-    paddingBottom: "2rem",
-    background: gray900,
-};
+const CopyrightDiv = styled.div`
+    padding-top: 1.5rem;
+    padding-bottom: 2rem;
+    background: ${gray900};
+`;

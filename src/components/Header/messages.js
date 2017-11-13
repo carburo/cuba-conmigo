@@ -7,27 +7,27 @@ import {defineMessages} from 'react-intl';
 
 export default defineMessages({
     homeNav: {
-        id: 'cc.components.Header.home',
+        id: 'cc.Header.home',
     },
     aboutNav: {
-        id: 'cc.components.Header.about',
+        id: 'cc.Header.about',
     },
     servicesNav: {
-        id: 'cc.components.Header.services',
+        id: 'cc.Header.services',
     },
     packagesNav: {
-        id: 'cc.components.Header.packages',
+        id: 'cc.Header.packages',
     },
     translationsNav: {
-        id: 'cc.components.Header.translations',
+        id: 'cc.Header.translations',
     },
     consulateNav: {
-        id: 'cc.components.Header.consulate',
+        id: 'cc.Header.consulate',
     },
     travelNav: {
-        id: 'cc.components.Header.travel',
+        id: 'cc.Header.travel',
     },
     contactNav: {
-        id: 'cc.components.Header.contact',
+        id: 'cc.Header.contact',
     },
 });
