@@ -29,6 +29,15 @@
   "cc.About.intro": "L’ Associazione per soddisfare le richieste degli associati, fornisce loro le seguente attività:",
 
   "cc.Services.header": "Servizi",
+  "cc.Services.consulate.title": "Documenti legali.",
+  "cc.Services.consulate.subtitle": "Sportello Consolare.",
+  "cc.Services.consulate.body": "Lorem Ipsum Dolor sit amet. Lorem Ipsum Dolor sit amet. Lorem Ipsum Dolor sit amet. Lorem Ipsum Dolor sit amet. Lorem Ipsum Dolor sit amet. Lorem Ipsum Dolor sit amet.",
+  "cc.Services.translations.title": "Traduzioni",
+  "cc.Services.translations.subtitle": "giurate e libere.",
+  "cc.Services.translations.body": "Consulenza riguardo alla documentazione necessaria da presentare a Cuba per conto di società italiane.",
+  "cc.Services.packages.title": "Pacchi.",
+  "cc.Services.packages.subtitle": "Sportello Consolare.",
+  "cc.Services.packages.body": "Lorem Ipsum Dolor sit amet. Lorem Ipsum Dolor sit amet. Lorem Ipsum Dolor sit amet. Lorem Ipsum Dolor sit amet. Lorem Ipsum Dolor sit amet. Lorem Ipsum Dolor sit amet.",
 
   "cc.Translations.header": "Traduzione",
 
