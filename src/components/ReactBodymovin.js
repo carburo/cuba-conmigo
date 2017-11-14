@@ -1,33 +1,50 @@
-import React from "react";
-import bodymovin from "bodymovin/build/player/bodymovin_light.min";
+const React = require('react')
+var bodymovin
+const isDOM = typeof window === 'object' && typeof window.document === 'object'
 
-export default class ReactBodymovin extends React.Component {
+/* global BODYMOVIN_EXPRESSION_SUPPORT */
+
+// Use Bodymovin Light if running in browser
+if (isDOM && (typeof BODYMOVIN_EXPRESSION_SUPPORT === 'undefined' || BODYMOVIN_EXPRESSION_SUPPORT == null || BODYMOVIN_EXPRESSION_SUPPORT === false)) {
+    bodymovin = require('bodymovin/build/player/bodymovin_light.min')
+    // Use Bodymovin w/ expressions
+} else if (isDOM && BODYMOVIN_EXPRESSION_SUPPORT === true) {
+    bodymovin = require('bodymovin/build/player/bodymovin.min')
+}
+
+class ReactBodymovin extends React.Component {
     componentDidMount() {
-        var options = Object.assign({}, this.props.options);
-        options.wrapper = this.wrapper;
-        options.renderer = 'svg';
-        this.animation = bodymovin.loadAnimation(options);
+        if (!isDOM) {
+            return
+        }
+        const options = Object.assign({}, this.props.options)
+        options.wrapper = this.wrapper
+        options.renderer = 'svg'
+        this.animation = bodymovin.loadAnimation(options)
     }
 
     componentWillUnmount() {
-        this.animation.destroy();
+        if (!isDOM) {
+            return
+        }
+        this.animation.destroy()
     }
 
     shouldComponentUpdate() {
-        return false;
+        return false
     }
 
     render() {
-        let _this2 = this;
-
-        let storeWrapper = function storeWrapper(el) {
-            _this2.wrapper = el;
-        };
+        const storeWrapper = (el) => {
+            this.wrapper = el
+        }
 
         return (
-            <div className={`${this.props.className} react-bodymovin-container`} ref={storeWrapper}>
+            <div className='react-bodymovin-container' ref={storeWrapper}>
                 {this.props.children}
-            </div>    
-        );
+            </div>
+        )
     }
 }
+
+module.exports = ReactBodymovin

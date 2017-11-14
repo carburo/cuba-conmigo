@@ -1,37 +1,38 @@
-import React from "react";
-import bodymovin from "bodymovin";
+import React from 'react';
+import PropTypes from 'prop-types';
+import bodymovin from 'bodymovin';
 
 export default class Lottie extends React.Component {
     render() {
-        var _props = this.props,
-            width = _props.width,
-            height = _props.height;
-
-        var lottieStyles = {
-            width: width ? width + 'px' : '100%',
-            height: height ? height + 'px' : '100%',
+        const { width, height } = this.props;
+        const lottieStyles = {
+            width: width ? `${width}px` : '100%',
+            height: height ? `${height}px` : '100%',
             overflow: 'hidden',
-            margin: '0 auto'
+            margin: '0 auto',
         };
-        return <div ref="lavContainer" style={lottieStyles} />;
+        return <div ref='lavContainer' style={lottieStyles} />;
     }
 
     componentDidMount() {
-        var _props$options = this.props.options,
-            loop = _props$options.loop,
-            autoplay = _props$options.autoplay,
-            animationData = _props$options.animationData,
-            rendererSettings = _props$options.rendererSettings,
-            eventListeners = _props$options.eventListeners;
-        var lavContainer = this.refs.lavContainer;
+        const {
+      options: {
+        loop,
+            autoplay,
+            animationData,
+            rendererSettings,
+      },
+            eventListeners
+    } = this.props;
 
+        const { lavContainer } = this.refs;
         this.options = {
             container: lavContainer,
             renderer: 'svg',
             loop: loop !== false,
             autoplay: autoplay !== false,
             animationData: animationData,
-            rendererSettings: rendererSettings
+            rendererSettings: rendererSettings,
         };
 
         this.anim = bodymovin.loadAnimation(this.options);
@@ -85,37 +86,32 @@ export default class Lottie extends React.Component {
     }
 
     registerEvents(eventListeners) {
-        var _this2 = this;
-
-        eventListeners && eventListeners.forEach(function (eventListener) {
-            _this2.anim.addEventListener(eventListener.eventName, eventListener.callback);
+        eventListeners.forEach((eventListener) => {
+            this.anim.addEventListener(eventListener.eventName, eventListener.callback);
         });
     }
 
     deRegisterEvents(eventListeners) {
-        var _this3 = this;
-
-        eventListeners && eventListeners.forEach(function (eventListener) {
-            _this3.anim.removeEventListener(eventListener.eventName, eventListener.callback);
+        eventListeners.forEach((eventListener) => {
+            this.anim.removeEventListener(eventListener.eventName, eventListener.callback);
         });
     }
 }
 
-
-// Lottie.propTypes = {
-//     eventListeners: propTypes.default.arrayOf(propTypes.default.object),
-//     options: propTypes.default.object.isRequired,
-//     height: propTypes.default.number,
-//     width: propTypes.default.number,
-//     isStopped: propTypes.default.bool,
-//     isPaused: propTypes.default.bool,
-//     speed: propTypes.default.number,
-//     direction: propTypes.default.number
-// };
+Lottie.propTypes = {
+    eventListeners: PropTypes.arrayOf(PropTypes.object),
+    options: PropTypes.object.isRequired,
+    height: PropTypes.number,
+    width: PropTypes.number,
+    isStopped: PropTypes.bool,
+    isPaused: PropTypes.bool,
+    speed: PropTypes.number,
+    direction: PropTypes.number,
+};
 
 Lottie.defaultProps = {
     eventListeners: [],
     isStopped: false,
     isPaused: false,
-    speed: 1
+    speed: 1,
 };
