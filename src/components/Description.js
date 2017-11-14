@@ -1,33 +1,25 @@
-import * as React from "react";
+import React from "react"
+import { Center } from "./Html"
+import styled from "styled-components"
 
 export default class Description extends React.Component {
 
     render() {
         return (
-            <div style={style}>
-                <h3 style={titleStyle}>{this.props.title}</h3>
-                <div style={bodyStyle}>
+            <Center>
+                <h3>{this.props.title}</h3>
+                <Body>
                     {this.props.children}
-                </div>
+                </Body>
                 <div>
                     {this.props.footer}
                 </div>
-            </div>
-        );
+            </Center>
+        )
     }
 }
 
-const style = {
-    textAlign: "center",
-};
-
-const titleStyle = {
-    paddingTop: "1rem",
-    marginBottom: "1rem",
-    fontWeight: "600",
-};
-
-const bodyStyle = {
-    marginTop: "2rem",
-    marginBottom: "2rem",
-};
+const Body = styled.div`
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+`

@@ -1,7 +1,7 @@
 import * as React from "react";
 import { Col, Row } from "reactstrap";
 import styled from "styled-components";
-import { Text, TextMuted } from "./Html";
+import { Text, Span } from "./Html";
 
 export default class Featurette extends React.Component {
     render() {
@@ -11,9 +11,9 @@ export default class Featurette extends React.Component {
                     <Heading>
                         {this.props.title}
                         &nbsp;
-                        <TextMuted>{this.props.subtitle}</TextMuted>
+                        <Span muted>{this.props.subtitle}</Span>
                     </Heading>
-                    <Text>
+                    <Text lead>
                         {this.props.children}
                     </Text>
                 </Col>

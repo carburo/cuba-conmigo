@@ -14,7 +14,7 @@ export default class Contact extends React.Component {
             <Fade in={true} timeout={0}>
                 <Container>
                     <H1><FormattedMessage {...messages.contactHeader} /></H1>
-                    <Text>
+                    <Text lead>
                         <FormattedMessage {...messages.contactHeaderMessage} />
                     </Text>
                 </Container>

@@ -3,7 +3,7 @@ import {Container} from "reactstrap"
 import {FormattedMessage} from "react-intl"
 import messages, {services} from './messages';
 import Fade from "../Transitions/Fade";
-import {H1} from "../Html";
+import {H1, Text, Ul} from "../Html";
 import styled from "styled-components";
 
 export default class About extends React.Component {
@@ -14,12 +14,12 @@ export default class About extends React.Component {
                     <H1>
                         <FormattedMessage {...messages.aboutHeader} />
                     </H1>
-                    <p className="lead">
+                    <Text lead>
                         <FormattedMessage {...messages.introMessage}/>
-                    </p>
-                    <ul className="lead">
+                    </Text>
+                    <Ul lead>
                         {services.map((service, i) => <Li key={i}>{service}</Li>)}
-                    </ul>
+                    </Ul>
                 </Container>
             </Fade>
         );

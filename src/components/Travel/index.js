@@ -3,7 +3,7 @@ import {Container} from "reactstrap"
 import {FormattedMessage} from "react-intl"
 import messages from './messages';
 import Fade from "../Transitions/Fade";
-import {H1} from "../Html";
+import {H1, Text} from "../Html";
 import Featurette, {FeaturetteDivider} from "../Featurette";
 import legalImage from "img/legal-small.jpg";
 import travelImage from "img/travel-small.jpg";
@@ -15,9 +15,9 @@ export default class Travel extends React.Component {
             <Fade in={true} timeout={0}>
                 <Container>
                     <H1><FormattedMessage {...messages.travelHeader} /></H1>
-                    <p className="lead">
+                    <Text lead>
                         La nostra esperienza nel settore come agenzia turistica, ci permette di suggerire le migliore soluzioni alle richieste della nostra clientela, organizzando viaggi personalizzati a Cuba usufruendo in loco di collaborazioni di operatori referenziati ed infrastrutture specializzate nei diversi servizi.
-                    </p>
+                    </Text>
                     <FeaturetteDivider/>
                     <Featurette title="Destinazione Cuba."
                                 subtitle=""
