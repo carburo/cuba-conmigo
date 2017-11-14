@@ -1,11 +1,12 @@
-import React from "react";
+import React from "react"
 import {Container, Jumbotron} from "reactstrap"
-import {FormattedMessage} from 'react-intl';
-import messages from './messages';
-import {Link} from "react-router-dom";
-import Fade from "../Transitions/Fade";
-import CallToAction from "../CallToAction";
-import Services from "./Services";
+import {FormattedMessage} from 'react-intl'
+import messages from './messages'
+import {Link} from "react-router-dom"
+import Fade from "../Transitions/Fade"
+import CallToAction from "../CallToAction"
+import Services from "./Services"
+import Slider from "./Slider"
 
 export default class Home extends React.Component {
     render() {
@@ -19,15 +20,16 @@ export default class Home extends React.Component {
                         </p>
                     </Container>
                 </Jumbotron>
-                <Services/>
+                <Services />
                 <CallToAction dark
                               title="Make the Move"
                               subtitle="Considering migrating from Maven? We've got resources to help."
                               option1="Learn more"
-                              link1="/about"
+                              link1="/services"
                               option2="Contattaci"
                               link2="/contact"
                 />
+                <Slider />
             </Fade>
         );
     }
