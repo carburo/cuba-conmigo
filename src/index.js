@@ -6,7 +6,7 @@ import LanguageProvider from "./components/LanguageProvider"
 import { translationMessages } from "./i18n"
 import registerServiceWorker from './registerServiceWorker';
 import "simple-line-icons/css/simple-line-icons.css"
-import "./main.css";
+import "./bootstrap.css";
 import "typeface-roboto"
 
 // ========================================
