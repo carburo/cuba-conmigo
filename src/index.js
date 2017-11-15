@@ -7,6 +7,7 @@ import { translationMessages } from "./i18n"
 import registerServiceWorker from './registerServiceWorker';
 import "simple-line-icons/css/simple-line-icons.css"
 import "./main.css";
+import "typeface-roboto"
 
 // ========================================
 

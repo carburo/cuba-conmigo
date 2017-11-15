@@ -22,7 +22,8 @@
     "react-transition-group": "^2.2.1",
     "reactstrap": "next",
     "simple-line-icons": "^2.4.1",
-    "styled-components": "^2.2.3"
+    "styled-components": "^2.2.3",
+    "typeface-roboto": "^0.0.45"
   },
   "scripts": {
     "start": "react-scripts start",
