@@ -12,7 +12,7 @@ export default class Home extends React.Component {
     render() {
         return (
             <Fade in={true} timeout={0}>
-                <Jumbotron>
+                <Jumbotron fluid>
                     <Container>
                         <h1 className="display-3">Associazione Cuba conmigo</h1>
                         <p><FormattedMessage {...messages.contactMessage} /></p>
