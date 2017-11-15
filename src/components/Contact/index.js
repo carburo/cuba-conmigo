@@ -6,7 +6,6 @@ import Email from "../Email";
 import InfoCard from "../InfoCard";
 import Fade from "../Transitions/Fade";
 import { H1, Text, Ul } from "../Html";
-import Timetable from "../Timetable";
 
 export default class Contact extends React.Component {
     render() {
