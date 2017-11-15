@@ -22,10 +22,6 @@ export default class Contact extends React.Component {
                 <Container>
                     <Row>
                         <Col xs={12} md={6}>
-                            {/* <InfoCard icon={<i className="icon-direction" />}
-                                title={<FormattedMessage {...messages.addressTitle} />}>
-                                <Text lead><FormattedMessage {...messages.addressText} /></Text>
-                            </InfoCard> */}
                             <InfoCard icon={<i className="icon-envelope" />}
                                 title={<FormattedMessage {...messages.emailTitle} />}>
                                 <Ul lead>
