@@ -1,11 +1,12 @@
-import React from "react";
+import React from "react"
 import { Container, Row, Col } from "reactstrap"
 import { FormattedMessage } from "react-intl"
-import messages from './messages';
-import Email from "../Email";
-import InfoCard from "../InfoCard";
-import Fade from "../Transitions/Fade";
-import { H1, Text, Ul } from "../Html";
+import messages from './messages'
+import Email from "../Email"
+import InfoCard from "../InfoCard"
+import Fade from "../Transitions/Fade"
+import { H1, Text, Ul } from "../Html"
+import styled from "styled-components"
 
 export default class Contact extends React.Component {
     render() {
@@ -21,10 +22,10 @@ export default class Contact extends React.Component {
                 <Container>
                     <Row>
                         <Col xs={12} md={6}>
-                            <InfoCard icon={<i className="icon-direction" />}
+                            {/* <InfoCard icon={<i className="icon-direction" />}
                                 title={<FormattedMessage {...messages.addressTitle} />}>
                                 <Text lead><FormattedMessage {...messages.addressText} /></Text>
-                            </InfoCard>
+                            </InfoCard> */}
                             <InfoCard icon={<i className="icon-envelope" />}
                                 title={<FormattedMessage {...messages.emailTitle} />}>
                                 <Ul lead>
@@ -44,8 +45,13 @@ export default class Contact extends React.Component {
                                 </Ul>
                             </InfoCard>
                         </Col>
-                        <Col xs={12} md={6}>
-                            <h2>Aquí va el mapa</h2>
+                        <Col xs={12} md={6} className="mb-3">
+                            <MapRouter>
+                                <MapCanvas class="gmap_canvas">
+                                    <iframe title="map" width="100%" height="400" id="gmap_canvas" src="https://maps.google.com/maps?q=Cuba conmigo&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
+                                    </iframe>embed map <a href="http://www.embedgooglemap.net">embedgooglemap.net</a>
+                                </MapCanvas>
+                            </MapRouter>
                         </Col>
                     </Row>
                 </Container>
@@ -53,3 +59,15 @@ export default class Contact extends React.Component {
         );
     }
 }
+
+const MapRouter = styled.div`
+    overflow:hidden;
+    height:400px;
+    width:100%;
+`
+
+const MapCanvas = styled.div`
+    background:none!important;
+    height:400px;
+    width:100%;
+`
