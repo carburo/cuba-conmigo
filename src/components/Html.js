@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import bullet from 'img/triangle.svg'
+import bullet from 'img/square.svg'
 
 export const H1 = styled.h1`
   margin-bottom: 2rem;
@@ -7,14 +7,14 @@ export const H1 = styled.h1`
 
 function textClasses(props) {
   let classes = ""
-  if(props.muted) classes += " text-muted"
-  if(props.lead) classes += " lead"
+  if (props.muted) classes += " text-muted"
+  if (props.lead) classes += " lead"
   return classes
 }
 
 export const Text = styled.p.attrs({
   className: textClasses,
-})``
+}) ``
 
 export const Center = styled.div`
   text-align: center;
@@ -23,14 +23,10 @@ export const Center = styled.div`
 export const Span = Text.withComponent('span')
 
 export const Ul = Text.withComponent('ul').extend`
-  text-align: left;
+  margin-left: 1.2em; 
+  padding-left: 0;
 
   > li {
-    list-style: none;
-    background-image: url(${bullet});
-    background-repeat: no-repeat;
-    background-position: 0 8px;
-    padding-left: 25px;
-    margin-bottom: 10px;
+    list-style-image: url(${bullet});
   }
 `
