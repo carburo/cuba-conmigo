@@ -6,7 +6,7 @@ import Fade from "../Transitions/Fade";
 import {H1, Text} from "../Html";
 import Featurette, {FeaturetteDivider} from "../Featurette";
 import legalImage from "img/legal-small.jpg";
-import travelImage from "img/travel-small.jpg";
+import travelImage from "img/camara.png";
 import FluidImg from "../FluidImage";
 
 export default class Travel extends React.Component {
