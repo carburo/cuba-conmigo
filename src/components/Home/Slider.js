@@ -12,23 +12,29 @@ export default class Slider extends React.Component {
         return(
             <Section title="Come to visit us">
                 <Row style={{paddingTop: "2rem"}}>
-                    <Col xs={12} md={3}>
+                    <ImgContainer>
                         <Img src={trinidadImage} alt="Trinidad" />
-                    </Col>
-                    <Col xs={12} md={3}>
-                        <Img src={puenteImage} alt="Trinidad" />
-                    </Col>
-                    <Col xs={12} md={3}>
-                        <Img src={carroImage} alt="Trinidad" />
-                    </Col>
-                    <Col xs={12} md={3}>
-                        <Img src={playaImage} alt="Trinidad" />
-                    </Col>
+                    </ImgContainer>
+                    <ImgContainer>
+                        <Img src={puenteImage} alt="Puente" />
+                    </ImgContainer>
+                    <ImgContainer>
+                        <Img src={carroImage} alt="Almendrón" />
+                    </ImgContainer>
+                    <ImgContainer>
+                        <Img src={playaImage} alt="Varadero" />
+                    </ImgContainer>
                 </Row>    
             </Section>    
         )
     }
 }
+
+const PaddedCol = styled(Col)`
+    margin-bottom: 1rem;
+`
+
+const ImgContainer = (props) => <PaddedCol xs={12} md={3}>{props.children}</PaddedCol>
 
 const Img = styled.img`
     width: 100%;
