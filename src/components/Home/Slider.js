@@ -11,7 +11,7 @@ export default class Slider extends React.Component {
     render() {
         return(
             <Section title="Come to visit us">
-                <Row style={{paddingTop: "2rem"}}>
+                <SliderContainer>
                     <ImgContainer>
                         <Img src={trinidadImage} alt="Trinidad" />
                     </ImgContainer>
@@ -24,11 +24,15 @@ export default class Slider extends React.Component {
                     <ImgContainer>
                         <Img src={playaImage} alt="Varadero" />
                     </ImgContainer>
-                </Row>    
+                </SliderContainer>    
             </Section>    
         )
     }
 }
+
+const SliderContainer = styled(Row)`
+    padding-top: 2rem;
+`
 
 const PaddedCol = styled(Col)`
     margin-bottom: 1rem;
