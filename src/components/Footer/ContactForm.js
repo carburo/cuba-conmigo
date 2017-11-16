@@ -3,17 +3,18 @@ import { Form, FormGroup, Input, Button } from "reactstrap"
 
 export default function ContactForm() {
     return (
-        <Form>
+        <Form method="post">
+            <input type="hidden" name="form-name" value="contact" />
             <FormGroup>
-                <Input placeholder="Nome" />
+                <Input name="name" type="text" placeholder="Nome" />
             </FormGroup>
             <FormGroup>
-                <Input placeholder="Email" />
+                <Input name="email" type="email" placeholder="Email" />
             </FormGroup>
             <FormGroup>
-                <Input type="textarea" placeholder="Messagio" />
+                <Input name="message" type="textarea" placeholder="Messagio" />
             </FormGroup>
-            <Button>Submit</Button>
+            <Button type="submit">Submit</Button>
         </Form>
     );
 }
