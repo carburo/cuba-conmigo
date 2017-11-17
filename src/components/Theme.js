@@ -13,6 +13,7 @@ injectGlobal`
 
 const Theme = {
     primary: colorPrimary,
+    background: "#fff",
 }
 
 export default Theme;

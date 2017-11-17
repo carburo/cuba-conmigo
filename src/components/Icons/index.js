@@ -1,60 +1,52 @@
-import * as React from "react";
-import icons from "img/icons.svg";
-import { colorPrimary, white } from "color-variables";
-import styled from "styled-components";
+import * as React from "react"
+import facebook from "img/facebook-light.svg"
+import twitter from "img/twitter-light.svg"
+import instagram from "img/instagram-light.svg"
+import medium from "img/medium-light.svg"
+import { colorPrimary, white } from "color-variables"
+import styled from "styled-components"
 
-export default function SocialIcon(props) {
+const circleSize = "2rem";
+
+const Image = styled.span`
+    background-color: ${props => props.theme.background};
+    width: ${circleSize};
+    height: ${circleSize};
+    display: inline-block;
+    line-height: ${circleSize};
+    border-radius: 50%;
+    mask: url(${props => props.icon});
+`
+
+const Circle = styled.span`
+    background-color: ${props => props.theme.primary};
+    width: ${circleSize};
+    height: ${circleSize};
+    display: inline-block;
+    line-height: ${circleSize};
+    border-radius: 50%;
+    margin: 0.2rem;
+`
+
+const Icon = (props) => (
+    <Circle>
+        <Image icon={props.icon} />
+    </Circle>
+)
+
+function SocialIcon(props) {
     return (
         <a href={props.url}>
-            <Icon>
-                <use xlinkHref={`${icons}#social-circle`} style={svgBackground} />
-                <use xlinkHref={`${icons}#${props.icon}`} style={svgForeground} />
-            </Icon>
+            <Icon icon={props.src} />
         </a>
     );
 }
 
-const iconSize = "2.5rem";
-
-const Icon = styled.svg`
-    width: ${iconSize};
-    height: ${iconSize};
-    padding: 0.2rem;
-`;
-
-const svgBackground = {
-    fill: colorPrimary,
-};
-
-const svgForeground = {
-    fill: white,
-};
-
-export const FacebookIcon = (props) => <SocialIcon
-    icon="facebook-variant"
-    url="https://www.facebook.com/cubaconmigo"
-/>;
-
-export const TwitterIcon = (props) => <SocialIcon
-    icon="twitter-variant"
-    url="https://www.twitter.com/cubaconmigo"
-/>;
-
-export const InstagramIcon = (props) => <SocialIcon
-    icon="instagram-variant"
-    url="https://www.instagram.com/cubaconmigo"
-/>;
-
-export const MediumIcon = (props) => <SocialIcon
-    icon="medium-variant"
-    url="https://www.medium.com/cuba-conmigo"
-/>;
-
 export const SocialIcons = () => (
     <div>
-        <FacebookIcon />
-        <TwitterIcon />
-        <InstagramIcon />
-        <MediumIcon />
+        <SocialIcon url="https://www.facebook.com/cubaconmigo" src={facebook} />
+        <SocialIcon url="https://www.twitter.com/cubaconmigo" src={twitter} />
+        <SocialIcon url="https://www.instagram.com/cuba_conmigo" src={instagram} />
+        <SocialIcon url="https://www.medium.com/cuba-conmigo" src={medium} />
     </div>
 );
