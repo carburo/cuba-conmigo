@@ -11,9 +11,9 @@ export default class Hero extends React.Component {
         return (
             <Background fluid>
                 <Content>
-                    <h1 className="display-3">Associazione Cuba conmigo</h1>
-                    <p><FormattedMessage {...messages.contactMessage} /></p>
-                    <p><Link className="btn btn-primary btn-lg" to="/about" role="button">Learn more</Link>
+                    <Title>Associazione Cuba conmigo</Title>
+                    <Subtitle><FormattedMessage {...messages.contactMessage} /></Subtitle>
+                    <p><Link className="btn btn-primary text-white text-uppercase" to="/about" role="button">Learn more</Link>
                     </p>
                 </Content>
             </Background>
@@ -28,4 +28,20 @@ const Content = styled(Container)`
 const Background = styled(Jumbotron)`
     background-image: url(${heroImage});
     background-size: cover;
+`
+
+const Title = styled.h1.attrs({
+    className: "text-white text-uppercase",
+})`
+    font-family: 'Franklin Heavy';
+    font-weight: 900;
+    transform: scale(1, 1.3);
+    letter-spacing: 0.04em;
+`
+
+const Subtitle = styled.p.attrs({
+    className: "text-white text-uppercase",
+})`
+    letter-spacing: 0.04em;
+    margin-bottom: 3rem;
 `

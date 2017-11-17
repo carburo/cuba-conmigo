@@ -1,12 +1,13 @@
-import React from "react";
+import React from "react"
 import { FormattedMessage } from "react-intl"
 import { Container, Row, Col } from "reactstrap"
 import messages from './messages'
-import { SocialIcons } from "../Icons";
-import ContactForm from "./ContactForm";
-import { gray500, gray800, gray900 } from "color-variables";
-import styled from "styled-components";
-import Timetable from "../Timetable";
+import { SocialIcons } from "../Icons"
+import ContactForm from "./ContactForm"
+import { gray500, gray800, gray900 } from "color-variables"
+import styled from "styled-components"
+import Timetable from "../Timetable"
+import { H3 } from "../Html"
 
 function FooterColumn(props) {
     return (
@@ -24,7 +25,7 @@ export default class Footer extends React.Component {
                 <FooterInfo>
                     <Row>
                         <FooterColumn>
-                            <h3><FormattedMessage {...messages.aboutHeader} /></h3>
+                            <H3><FormattedMessage {...messages.aboutHeader} /></H3>
                             <p><FormattedMessage {...messages.aboutBody} /></p>
                             <SocialIcons />
                         </FooterColumn>
@@ -32,7 +33,7 @@ export default class Footer extends React.Component {
                             <Timetable />
                         </FooterColumn>
                         <FooterColumn>
-                            <h3>Contattaci</h3>
+                            <H3>Contattaci</H3>
                             <ContactForm />
                         </FooterColumn>
                     </Row>
@@ -59,7 +60,7 @@ const CopyrightDiv = styled.div`
     background: ${gray900};
 `;
 
-const FooterInfo = styled(Container)`
+const FooterInfo = styled(Container) `
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
 `;

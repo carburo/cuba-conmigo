@@ -1,17 +1,18 @@
-import {Container} from "reactstrap";
-import * as React from "react";
+import { Container } from "reactstrap"
+import * as React from "react"
+import { H2 } from "./Html"
 
 export default function Section(props) {
     let style = styleCommon;
     if (props.dark) {
-        style = {...style, ...styleDark};
+        style = { ...style, ...styleDark };
     }
     return (
         <section style={style}>
             <Container>
                 {
                     (props.title !== undefined) ?
-                        <h2 style={titleStyle}>{props.title}</h2> : null
+                        <H2 style={titleStyle}>{props.title}</H2> : null
                 }
                 {
                     (props.subtitle !== undefined) ?

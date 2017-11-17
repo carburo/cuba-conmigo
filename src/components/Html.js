@@ -5,6 +5,19 @@ export const H1 = styled.h1`
   margin-bottom: 2rem;
 `
 
+export const H2 = styled.h2.attrs({
+  className: 'text-uppercase'
+})`
+  letter-spacing: 0.02em;
+`
+
+export const H3 = styled.h2.attrs({
+  className: 'text-uppercase'
+})`
+  font-size: 1.5rem;
+  letter-spacing: 0.02em;
+`
+
 function textClasses(props) {
   let classes = ""
   if (props.muted) classes += " text-muted"

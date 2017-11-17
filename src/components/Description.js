@@ -1,5 +1,5 @@
 import React from "react"
-import { Center } from "./Html"
+import { Center, H3 } from "./Html"
 import styled from "styled-components"
 
 export default class Description extends React.Component {
@@ -7,7 +7,7 @@ export default class Description extends React.Component {
     render() {
         return (
             <Center>
-                <h3>{this.props.title}</h3>
+                <H3>{this.props.title}</H3>
                 <Body>
                     {this.props.children}
                 </Body>

@@ -1,10 +1,11 @@
 import React from "react";
 import { FormattedMessage, FormattedTime } from "react-intl";
+import { H3 } from "../Html"
 
 export default function TimeTable(props) {
     return (
         <div>
-            <h3><FormattedMessage id="cc.Timetable.header" /></h3>
+            <H3><FormattedMessage id="cc.Timetable.header" /></H3>
             <p>
                 <FormattedMessage id="cc.Timetable.openDays" /> 
                 <br />
