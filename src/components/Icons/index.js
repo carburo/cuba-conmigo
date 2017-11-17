@@ -3,7 +3,6 @@ import facebook from "img/facebook-light.svg"
 import twitter from "img/twitter-light.svg"
 import instagram from "img/instagram-light.svg"
 import medium from "img/medium-light.svg"
-import { colorPrimary, white } from "color-variables"
 import styled from "styled-components"
 
 const circleSize = "2rem";

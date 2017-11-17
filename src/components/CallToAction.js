@@ -23,9 +23,9 @@ const buttonClass = (orientation) => `mb-2 text-center text-sm-center text-md-${
 
 function ActionButton(props) {
     const margin = (props.left) ? "mr-md-5 mr-sm-0" : "ml-md-5 ml-sm-0";
-    const btn = 'btn' + (props.outline ? '-outline' : '');
+    const btn = (props.outline ? 'btn-outline-primary' : 'btn-primary text-white');
     return (
-        <ButtonLink to={props.to} className={`btn ${btn}-primary ${margin}`}>
+        <ButtonLink to={props.to} className={`btn ${btn} ${margin}`}>
             {props.text}
         </ButtonLink>
     );

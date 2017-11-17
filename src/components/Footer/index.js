@@ -4,7 +4,7 @@ import { Container, Row, Col } from "reactstrap"
 import messages from './messages'
 import { SocialIcons } from "../Icons"
 import ContactForm from "./ContactForm"
-import { gray500, gray800, gray900 } from "color-variables"
+import { gray500, gray800, gray900 } from "../Theme"
 import styled from "styled-components"
 import Timetable from "../Timetable"
 import { H3 } from "../Html"
