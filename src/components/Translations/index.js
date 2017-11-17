@@ -1,8 +1,9 @@
 import React from "react";
-import {Card, CardBody, CardHeader, Container} from "reactstrap"
-import {FormattedMessage} from "react-intl"
-import messages from './messages';
-import Fade from "../Transitions/Fade";
+import { Card, CardBody, Container } from "reactstrap"
+import { FormattedMessage } from "react-intl"
+import messages from './messages'
+import Fade from "../Transitions/Fade"
+import Callout from "../Callout"
 
 export default class Translations extends React.Component {
     render() {
@@ -28,11 +29,8 @@ export default class Translations extends React.Component {
                         </CardBody>
                     </Card>
 
-                    <Card>
-                        <CardHeader>
-                            <h4>Traduzione Asseverata</h4>
-                        </CardHeader>
-                        <CardBody>
+                    <Callout title="Traduzione Asseveratta">
+                        <p>
                             Quando un documento legale deve essere tradotto per essere presentato presso un ente o
                             un’istituzione deve mantenere il proprio valore legale: in questo caso è necessaria la
                             traduzione asseverata (o traduzione giurata) in tribunale.
@@ -54,8 +52,8 @@ export default class Translations extends React.Component {
 
                             Il servizio di asseverazione di traduzioni della nostra agenzia è garantita da un traduttore
                             giurato con più di 25 anni di esperienza.
-                        </CardBody>
-                    </Card>
+                        </p>
+                    </Callout>
                 </Container>
             </Fade>
         );
