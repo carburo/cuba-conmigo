@@ -7,8 +7,10 @@ import InfoCard from "../InfoCard"
 import Fade from "../Transitions/Fade"
 import { H1, Text, Ul } from "../Html"
 import Map from "../Map"
+import ErrorBoundary from "../ErrorBoundary"
 
 export default class Contact extends React.Component {
+
     render() {
         return (
             <Fade in={true} timeout={0}>
@@ -42,13 +44,9 @@ export default class Contact extends React.Component {
                             </InfoCard>
                         </Col>
                         <Col xs={12} md={6} className="mb-3">
-                            <Map
-                                isMarkerShown
-                                googleMapURL="https://maps.googleapis.com/maps/api/js?key=AIzaSyCgtHuGlKG9QrvEcW2tDBR_uMg1Z2WHqrw&v=3.exp&libraries=geometry,drawing,places"
-                                loadingElement={<div style={{ height: `100%` }} />}
-                                containerElement={<div style={{ height: `400px` }} />}
-                                mapElement={<div style={{ height: `100%` }} />}
-                            />
+                            <ErrorBoundary>
+                                <Map />
+                            </ErrorBoundary>
                         </Col>
                     </Row>
                 </Container>

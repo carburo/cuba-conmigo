@@ -4,8 +4,8 @@ import styled from "styled-components"
 import { FormattedMessage } from 'react-intl'
 import messages from './messages'
 import { Container, Jumbotron } from "reactstrap"
-import { white } from "../Theme";
-import { ButtonLink } from "../Html";
+import { white } from "../Theme"
+import { ButtonLink } from "../Html"
 
 export default class Hero extends React.Component {
     render() {

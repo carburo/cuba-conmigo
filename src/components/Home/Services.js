@@ -11,14 +11,14 @@ import React from "react"
 import { SlideInForward } from "../Animations"
 
 export default function Services(props) {
+
     return (
         <Section>
             <Row>
                 {services.map(service => {
                     const title = <FormattedMessage {...service.title} />;
                     return (
-                        <Col key={service.key} xl={4} lg={4} md={4} sm={12} xs={12}>
-                            
+                        <Col key={service.key} xs={12} md={4}>
                                 <Description
                                     title={title}
                                     footer={<Text><FormattedMessage {...service.text} /></Text>}>
