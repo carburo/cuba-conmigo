@@ -1,5 +1,5 @@
 import React from "react"
-import imageData from "img/almendron.png"
+import imageData from "img/almendron.svg"
 import messages from "./messages"
 import FluidImg from "../FluidImage"
 import { Text } from "../Html"
