@@ -10,6 +10,7 @@ export const Button = Buttons.Button
 export const ButtonLink = Buttons.ButtonLink
 
 export const Text = Texts.Text
+export const TextContainer = Texts.TextContainer
 export const Center = Texts.Center
 export const Span = Texts.Span
 export const Ul = Texts.Ul

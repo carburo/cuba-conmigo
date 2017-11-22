@@ -1,7 +1,7 @@
 import * as React from "react";
 import { Col, Row } from "reactstrap";
 import styled from "styled-components";
-import { Text, Span } from "./Html";
+import { Span, TextContainer } from "./Html";
 
 export default class Featurette extends React.Component {
     render() {
@@ -13,9 +13,9 @@ export default class Featurette extends React.Component {
                         &nbsp;
                         <Span muted>{this.props.subtitle}</Span>
                     </Heading>
-                    <Text lead>
+                    <TextContainer lead>
                         {this.props.children}
-                    </Text>
+                    </TextContainer>
                 </Col>
                 <Col md={5} className={(this.props.reverse) ? "text-right" : "order-md-1"}>
                     {this.props.image}
@@ -27,8 +27,9 @@ export default class Featurette extends React.Component {
 
 const Heading = styled.h2`
     font-weigth: 300;
-    line-height: 1;
+    line-height: 1.2;
     letter-spacing: -.05rem;
+    margin-bottom: 1.5rem;
 `;
 
 export const FeaturetteDivider = styled.hr`

@@ -4,13 +4,33 @@ export default defineMessages({
   servicesHeader: {
     id: 'cc.Services.header',
   },
-  consulateTitle: {
+  documentsTitle: {
     id: 'cc.Services.consulate.title',
   },
-  consulateSubtitle: {
+  documentsSubtitle: {
     id: 'cc.Services.consulate.subtitle',
   },
-  consulateBody: {
+  servicesList: [
+    {
+      id: 'cc.Services.consulate.list.visa'
+    },
+    {
+      id: 'cc.Services.consulate.list.consulate'
+    },
+    {
+      id: 'cc.Services.consulate.list.certificate'
+    },
+    {
+      id: 'cc.Services.consulate.list.citizenship'
+    },
+    {
+      id: 'cc.Services.consulate.list.healthEnsurance'
+    },
+  ],
+  showMore: {
+    id: 'cc.Services.showMore',
+  },
+  documentsBody: {
     id: 'cc.Services.consulate.body',
   },
   translationsTitle: {
@@ -22,6 +42,9 @@ export default defineMessages({
   translationsBody: {
     id: 'cc.Services.translations.body',
   },
+  translationsExplanation: {
+    id: 'cc.Services.translations.explanation',
+  },
   packagesTitle: {
     id: 'cc.Services.packages.title',
   },
@@ -30,5 +53,8 @@ export default defineMessages({
   },
   packagesBody: {
     id: 'cc.Services.packages.body',
+  },
+  containersBody: {
+    id: 'cc.Services.containers.body',
   },
 });

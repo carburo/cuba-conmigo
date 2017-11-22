@@ -12,6 +12,8 @@ export const Text = styled.p.attrs({
     className: textClasses,
 }) ``
 
+export const TextContainer = Text.withComponent('div')
+
 export const Center = styled.div`
   text-align: center;
 `
