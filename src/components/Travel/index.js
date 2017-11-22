@@ -5,8 +5,8 @@ import messages from './messages';
 import Fade from "../Transitions/Fade";
 import {H1, Text} from "../Html";
 import Featurette, {FeaturetteDivider} from "../Featurette";
-import legalImage from "img/legal-small.jpg";
-import travelImage from "img/camara.png";
+import cubaImage from "img/almendron.png";
+import travelImage from "img/camara.svg";
 import FluidImg from "../FluidImage";
 
 export default class Travel extends React.Component {
@@ -21,7 +21,7 @@ export default class Travel extends React.Component {
                     <FeaturetteDivider/>
                     <Featurette title="Destinazione Cuba."
                                 subtitle=""
-                                image={<FluidImg src={legalImage} alt="Generic placeholder image" route="/consulate" />}>
+                                image={<FluidImg src={cubaImage} alt="Generic placeholder image" route="/consulate" />}>
                         Cuba è l'isola più insolita e affascinante del mar dei Caraibi, una destinazione autentica, accogliente, e dal ritmo irresistibile; che unisce elementi molto diversi tra loro, un capolavoro di natura incontaminata in un clima caldo quasi tutto l'anno. Tante sono le attrattive di interesse, perché Cuba non è solo mare e sole, Cuba è musica, storia, natura, arte, folklore, un popolo allegro e cordiale, che sono il risultato di un passato importante.
                     </Featurette>
                     <FeaturetteDivider/>
