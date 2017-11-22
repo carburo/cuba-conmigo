@@ -3,7 +3,7 @@
  *
  * This contains all the text for the HomePage component.
  */
-import {defineMessages} from 'react-intl';
+import { defineMessages } from 'react-intl';
 
 export default defineMessages({
     travelHeader: {
@@ -12,6 +12,35 @@ export default defineMessages({
     travelInfo: {
         id: 'cc.Travel.info',
     },
+    servicesHeader: {
+        id: 'cc.Travel.services.header',
+    },
+    servicesList: [
+        {
+            id: 'cc.Travel.services.list.ticket'
+        },
+        {
+            id: 'cc.Travel.services.list.package'
+        },
+        {
+            id: 'cc.Travel.services.list.rentalCar'
+        },
+        {
+            id: 'cc.Travel.services.list.tour'
+        },
+        {
+            id: 'cc.Travel.services.list.assistance'
+        },
+        {
+            id: 'cc.Travel.services.list.healthEnsurance'
+        },
+        {
+            id: 'cc.Travel.services.list.lodging'
+        },
+        {
+            id: 'cc.Travel.services.list.view'
+        },
+    ],
     cubaDestinationHeader: {
         id: 'cc.Travel.cuba.header',
     },

@@ -6,6 +6,7 @@ import Fade from "../Transitions/Fade"
 import {H1, Text} from "../Html"
 import CubaDestination from "./CubaDestination"
 import Tourism from "./Tourism"
+import Services from "./Services"
 
 export default class Travel extends React.Component {
     render() {
@@ -17,6 +18,7 @@ export default class Travel extends React.Component {
                         <FormattedMessage {...messages.travelInfo} />
                     </Text>
                     <CubaDestination />
+                    <Services reverse />
                     <Tourism />
                 </Container>
             </Fade>
