@@ -12,10 +12,12 @@ export default class Hero extends React.Component {
         return (
             <Background fluid>
                 <Content>
-                    <Title>Associazione Cuba conmigo</Title>
-                    <Subtitle><FormattedMessage {...messages.contactMessage} /></Subtitle>
+                    <Title><FormattedMessage {...messages.heroTitle} /></Title>
+                    <Subtitle><FormattedMessage {...messages.heroSubtitle} /></Subtitle>
                     <div>
-                        <ButtonLink primary uppercase to="/about">Learn more</ButtonLink>
+                        <HeroButton primary uppercase to="/contact">
+                            <FormattedMessage {...messages.heroInfoButton} />
+                        </HeroButton>
                     </div>
                 </Content>
             </Background>
@@ -46,4 +48,8 @@ const Subtitle = styled.p.attrs({
 }) `
     letter-spacing: 0.04em;
     margin-bottom: 3rem;
+`
+
+const HeroButton = ButtonLink.extend`
+    letter-spacing: 0.05em;
 `

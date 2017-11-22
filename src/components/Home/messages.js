@@ -1,6 +1,27 @@
 import {defineMessages} from 'react-intl';
 
 export default defineMessages({
+    heroTitle: {
+        id: 'cc.HomePage.hero.title',
+    },
+    heroSubtitle: {
+        id: 'cc.HomePage.hero.subtitle',
+    },
+    callTitle: {
+        id: 'cc.HomePage.call.title',
+    },
+    callSubtitle: {
+        id: 'cc.HomePage.call.subtitle',
+    },
+    callServicesButton: {
+        id: 'cc.HomePage.call.button.services',
+    },
+    callContactButton: {
+        id: 'cc.HomePage.call.button.contact',
+    },
+    heroInfoButton: {
+        id: 'cc.HomePage.hero.button.info',
+    },
     contactMessage: {
         id: 'cc.HomePage.contact.message',
     },
