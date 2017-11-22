@@ -7,7 +7,7 @@ import { Link } from "react-router-dom"
 import Featurette, { FeaturetteDivider } from "../Featurette"
 import { FormattedMessage } from "react-intl"
 
-const link = "/consulate"
+const link = "/legal"
 
 const image = () => (
     <Link to={link} >

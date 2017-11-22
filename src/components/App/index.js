@@ -5,7 +5,7 @@ import About from "../About"
 import Services from "../Services"
 import Travel from "../Travel"
 import Contact from "../Contact"
-import Consulate from "../Consulate"
+import Legal from "../Legal"
 import Header from "../Header"
 import Footer from "../Footer"
 import Translations from "../Translations"
@@ -28,7 +28,7 @@ export default class App extends React.Component {
                         <Route path="/services" component={Services} />
                         <Route path="/translations" component={Translations} />
                         <Route path="/packages" render={() => <Container><h1>Pacchi</h1></Container>} />
-                        <Route path="/consulate" component={Consulate} />
+                        <Route path="/legal" component={Legal} />
                         <Route path="/travel" component={Travel} />
                         <Route path="/contact" component={Contact} />
                     </main>
