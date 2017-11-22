@@ -5,7 +5,7 @@ import messages from './messages';
 import Fade from "../Transitions/Fade";
 import Featurette, { FeaturetteDivider } from "../Featurette";
 import legalImage from "img/mazo.svg";
-import translationsImage from "img/avion.svg";
+import translationsImage from "img/traduccion.svg";
 import packagesImage from "img/globo.svg";
 import { H1 } from "../Html";
 import FluidImg from "../FluidImage";

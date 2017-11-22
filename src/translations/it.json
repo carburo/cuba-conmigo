@@ -53,12 +53,12 @@
   "cc.Contact.address.text": "Piazza Sante Bargellini, 3. 00157 Roma",
   "cc.Contact.email.title": "Posta elettronica",
   "cc.Contact.phone.title": "Telefono",
-  "cc.Contact.phone.office.title": "Ufficio",
-  "cc.Contact.phone.documents.title": "Documenti",
-  "cc.Contact.phone.travel.title": "Viaggi",
-  "cc.Contact.phone.packages.title": "Pacchi",
-  "cc.Contact.phone.containers.title": "Containers",
-  "cc.Contact.phone.translations.title": "Traduzioni",
+  "cc.Contact.phone.office.title": "Ufficio: {phoneNumber}",
+  "cc.Contact.phone.documents.title": "Documenti: {phoneNumber}",
+  "cc.Contact.phone.travel.title": "Viaggi: {phoneNumber}",
+  "cc.Contact.phone.packages.title": "Pacchi: {phoneNumber}",
+  "cc.Contact.phone.containers.title": "Containers: {phoneNumber}",
+  "cc.Contact.phone.translations.title": "Traduzioni: {phoneNumber}",
   "cc.Contact.openingTime.title": "Orari di apertura",
   "cc.dummy.end": ""
 }
