@@ -19,6 +19,9 @@ export default defineMessages({
     callContactButton: {
         id: 'cc.HomePage.call.button.contact',
     },
+    sliderTitle: {
+        id: 'cc.HomePage.slider.title',
+    },
     heroInfoButton: {
         id: 'cc.HomePage.hero.button.info',
     },

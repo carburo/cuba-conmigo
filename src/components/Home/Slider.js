@@ -6,11 +6,13 @@ import Section from "../Section"
 import { Col, Row } from "reactstrap"
 import React from "react"
 import styled from "styled-components"
+import {FormattedMessage} from "react-intl"
+import messages from "./messages"
 
 export default class Slider extends React.Component {
     render() {
         return(
-            <Section title="Come to visit us">
+            <Section title={<FormattedMessage {...messages.sliderTitle} />}>
                 <SliderContainer>
                     <ImgContainer>
                         <Img src={trinidadImage} alt="Trinidad" />
