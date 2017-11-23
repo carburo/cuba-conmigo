@@ -36,8 +36,8 @@ const ButtonGroup = styled(Row)`
 `
 
 const ButtonLink = styled(Link)`
-    min-width: 10rem;
+    min-width: 12rem;
     padding-left: 2rem;
-    padding-right: 3rem;
+    padding-right: 2rem;
     font-size: 1.1rem;
 `
