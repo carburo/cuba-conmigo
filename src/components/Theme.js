@@ -1,5 +1,4 @@
 import { injectGlobal } from 'styled-components'
-import FranklinHeavy from '../fonts/Franklin Gothic Heavy Regular.ttf'
 
 export const white = "#ffffff"
 export const gray100 = "#f8f9fa"
