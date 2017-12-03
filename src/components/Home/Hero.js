@@ -35,9 +35,8 @@ const Background = styled(Jumbotron) `
 `
 
 const Title = styled.h1`
-    font-family: 'Franklin Heavy';
     font-weight: 900;
-    transform: scale(1, 1.3);
+    transform: scale(0.94, 1.3);
     letter-spacing: 0.04em;
     text-transform: uppercase;
     color: ${white}

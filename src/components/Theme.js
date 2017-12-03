@@ -15,15 +15,6 @@ export const black = "#000000"
 export const colorPrimary = "#dca459"
 export const colorInfo = "#0e9f96"
 
-injectGlobal`
-  @font-face {
-    font-family: 'Franklin Heavy';
-    font-style: normal;
-    font-weight: 900;
-    src: url('${FranklinHeavy}') format('truetype');
-  }
-`
-
 const Theme = {
   primary: colorPrimary,
   background: white,
