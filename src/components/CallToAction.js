@@ -1,5 +1,6 @@
 import Section from "./Section";
-import {Col, Row} from "reactstrap";
+import Col from "reactstrap/lib/Col"
+import Row from "reactstrap/lib/Row"
 import {Link} from "react-router-dom";
 import React from "react";
 import styled from "styled-components";

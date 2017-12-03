@@ -1,7 +1,8 @@
-import * as React from "react";
-import { Col, Row } from "reactstrap";
-import styled from "styled-components";
-import { Span, TextContainer } from "./Html";
+import * as React from "react"
+import Row from "reactstrap/lib/Row"
+import Col from "reactstrap/lib/Col"
+import styled from "styled-components"
+import { Span, TextContainer } from "./Html"
 
 export default class Featurette extends React.Component {
     render() {

@@ -1,5 +1,3 @@
-import { injectGlobal } from 'styled-components'
-
 export const white = "#ffffff"
 export const gray100 = "#f8f9fa"
 export const gray200 = "#e9ecef"

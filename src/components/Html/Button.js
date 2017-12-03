@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 import { Link } from "react-router-dom"
-import * as reactstrap from 'reactstrap'
+import BootstrapButton from "reactstrap/lib/Button"
 
 function buttonClass(props) {
     const style = (props.primary) ? 'primary' : 'secondary'
@@ -10,7 +10,7 @@ function buttonClass(props) {
     return [`btn btn-${style}`, outline, color, uppercase].join(" ")
 }
 
-export const Button = styled(reactstrap.Button).attrs`
+export const Button = styled(BootstrapButton).attrs`
     text-color: ${props => props.theme.background};
   `
 

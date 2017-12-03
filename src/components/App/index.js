@@ -9,7 +9,7 @@ import Legal from "../Legal"
 import Header from "../Header"
 import Footer from "../Footer"
 import Translations from "../Translations"
-import { Container } from "reactstrap"
+import Container from "reactstrap/lib/Container"
 import Theme from "../Theme"
 import { ThemeProvider } from "styled-components";
 

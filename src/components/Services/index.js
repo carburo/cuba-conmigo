@@ -1,5 +1,5 @@
 import React from "react"
-import { Container } from "reactstrap"
+import Container from "reactstrap/lib/Container"
 import { FormattedMessage } from "react-intl"
 import messages from './messages'
 import Fade from "../Transitions/Fade"

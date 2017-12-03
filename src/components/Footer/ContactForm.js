@@ -1,5 +1,8 @@
 import React from "react";
-import { Form, FormGroup, Input, Button } from "reactstrap"
+import Form from "reactstrap/lib/Form"
+import FormGroup from "reactstrap/lib/FormGroup"
+import Input from "reactstrap/lib/Input"
+import Button from "reactstrap/lib/Button"
 
 export default function ContactForm() {
     return (

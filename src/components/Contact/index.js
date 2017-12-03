@@ -1,5 +1,7 @@
 import React from "react"
-import { Container, Row, Col } from "reactstrap"
+import Container from "reactstrap/lib/Container"
+import Row from "reactstrap/lib/Row"
+import Col from "reactstrap/lib/Col"
 import { FormattedMessage } from "react-intl"
 import messages from './messages'
 import Email from "../Email"

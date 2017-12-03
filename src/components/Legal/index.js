@@ -1,5 +1,6 @@
 import React from 'react'
-import { Container, Fade } from 'reactstrap'
+import Container from "reactstrap/lib/Container"
+import Fade from "reactstrap/lib/Fade"
 import { H1, H2, Text, Ul, TextContainer } from '../Html'
 import Callout from "../Callout"
 import { FormattedMessage } from 'react-intl'

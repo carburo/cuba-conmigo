@@ -1,5 +1,10 @@
-import React from "react";
-import {Collapse, Container, Nav, Navbar, NavbarToggler, NavItem} from "reactstrap"
+import React from "react"
+import Collapse from "reactstrap/lib/Collapse"
+import Container from "reactstrap/lib/Container"
+import Nav from "reactstrap/lib/Nav"
+import Navbar from "reactstrap/lib/Navbar"
+import NavbarToggler from "reactstrap/lib/NavbarToggler"
+import NavItem from "reactstrap/lib/NavItem"
 import {Link, NavLink as RouteNavLink} from "react-router-dom"
 import {FormattedMessage} from "react-intl"
 import messages from './messages';

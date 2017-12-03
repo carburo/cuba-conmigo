@@ -1,4 +1,4 @@
-import { Container } from "reactstrap"
+import Container from "reactstrap/lib/Container"
 import * as React from "react"
 import { H2 } from "./Html"
 
